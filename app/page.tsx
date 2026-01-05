@@ -1,3 +1,5 @@
+import Benefits from "@/components/Benefits";
+
 export default function Home() {
   return (
     <main>
@@ -35,6 +37,7 @@ export default function Home() {
           </span>
         </div>
       </section>
+      <Benefits />
     </main>
   );
 }
