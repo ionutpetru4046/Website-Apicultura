@@ -2,7 +2,7 @@ export default function Newsletter() {
     return (
       <section className="py-20 bg-yellow-100">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-serif font-bold mb-4">Abonează-te la newsletter</h2>
+          <h2 className="text-3xl font-serif text-yellow-700 font-bold mb-4">Abonează-te la newsletter</h2>
           <p className="text-gray-700 mb-6">
             Fii la curent cu oferte și noutăți despre produsele noastre.
           </p>

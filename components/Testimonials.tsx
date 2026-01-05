@@ -37,7 +37,7 @@ export default function Testimonials() {
   return (
     <section className="bg-yellow-50 py-20">
       <div className="max-w-3xl mx-auto px-6 text-center relative">
-        <h2 className="text-3xl font-serif font-bold mb-12">
+        <h2 className="text-3xl font-serif text-yellow-700 font-bold mb-12">
           Ce spun clienții noștri
         </h2>
 

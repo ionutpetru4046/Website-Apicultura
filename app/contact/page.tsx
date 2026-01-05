@@ -10,7 +10,9 @@ export default function ContactPage() {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
+  function handleChange(
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) {
     setForm({ ...form, [e.target.name]: e.target.value });
   }
 
@@ -21,35 +23,40 @@ export default function ContactPage() {
   }
 
   return (
-    <section className="min-h-screen flex flex-col lg:flex-row items-center justify-center bg-gradient-to-br from-yellow-50 to-white px-0 py-0">
+    <section className="min-h-screen flex flex-col-reverse lg:flex-row items-stretch justify-center bg-gradient-to-br from-yellow-50 to-white px-0 py-0">
       {/* Left: Contact Info + Form */}
-      <div className="w-full max-w-xl p-8 bg-white rounded-2xl shadow-xl mx-4 mb-12 lg:m-12">
-        <h1 className="text-4xl font-serif leading-tight font-bold mb-4 text-yellow-700">Contactează-ne</h1>
-        <p className="text-gray-600 mb-6">
+      <div className="w-full max-w-xl p-4 sm:p-8 bg-white rounded-2xl shadow-xl mx-auto mb-8 lg:mb-0 lg:m-12 flex flex-col justify-center">
+        <h1 className="text-3xl sm:text-4xl font-serif leading-tight font-bold mb-4 text-yellow-700 text-center lg:text-left">
+          Contactează-ne
+        </h1>
+        <p className="text-gray-600 mb-6 text-center lg:text-left">
           Suntem bucuroși să răspundem rapid la orice solicitare sau comandă. Completează formularul sau folosește datele de contact de mai jos.
         </p>
-        <ul className="space-y-2 text-gray-700 mb-8">
+        <ul className="space-y-2 text-gray-700 mb-8 text-center lg:text-left text-base sm:text-lg">
           <li>
             <strong>Telefon:</strong>{" "}
-            <a className="hover:underline" href="tel:07XXXXXXXX">
+            <a className="hover:underline break-all" href="tel:07XXXXXXXX">
               07XXXXXXXX
             </a>
           </li>
           <li>
             <strong>Email:</strong>{" "}
-            <a className="hover:underline" href="mailto:contact@apicultura.ro">
+            <a className="hover:underline break-all" href="mailto:contact@apicultura.ro">
               contact@apicultura.ro
             </a>
           </li>
           <li>
-            <strong>Locație:</strong> România, Județul Bihor, Loc Pestis Oras Alesd Str. Valea Mori nr. 384
+            <strong>Locație:</strong> <span className="break-words">România, Județul Bihor, Loc Pestis Oras Alesd Str. Valea Mori nr. 384</span>
           </li>
         </ul>
 
         {!submitted ? (
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
-              <label className="block mb-1 font-medium text-gray-700" htmlFor="name">
+              <label
+                className="block mb-1 font-medium text-gray-700"
+                htmlFor="name"
+              >
                 Nume
               </label>
               <input
@@ -59,12 +66,16 @@ export default function ContactPage() {
                 required
                 value={form.name}
                 onChange={handleChange}
-                className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-yellow-400 outline-none transition"
+                className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-yellow-400 outline-none transition text-base"
                 placeholder="Numele tău"
+                autoComplete="name"
               />
             </div>
             <div>
-              <label className="block mb-1 font-medium text-gray-700" htmlFor="email">
+              <label
+                className="block mb-1 font-medium text-gray-700"
+                htmlFor="email"
+              >
                 Email
               </label>
               <input
@@ -74,12 +85,16 @@ export default function ContactPage() {
                 required
                 value={form.email}
                 onChange={handleChange}
-                className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-yellow-400 outline-none transition"
+                className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-yellow-400 outline-none transition text-base"
                 placeholder="Email-ul tău"
+                autoComplete="email"
               />
             </div>
             <div>
-              <label className="block mb-1 font-medium text-gray-700" htmlFor="message">
+              <label
+                className="block mb-1 font-medium text-gray-700"
+                htmlFor="message"
+              >
                 Mesaj
               </label>
               <textarea
@@ -89,13 +104,18 @@ export default function ContactPage() {
                 rows={5}
                 value={form.message}
                 onChange={handleChange}
-                className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-yellow-400 outline-none transition resize-none"
+                className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-yellow-400 outline-none transition resize-none text-base"
                 placeholder="Scrie mesajul tău aici..."
               />
             </div>
             <button
               type="submit"
-              className="w-full bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg font-semibold transition shadow"
+              className="w-full bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg font-semibold transition shadow disabled:opacity-60"
+              disabled={
+                !form.name.trim() ||
+                !form.email.trim() ||
+                !form.message.trim()
+              }
             >
               Trimite mesajul
             </button>
@@ -106,7 +126,7 @@ export default function ContactPage() {
           </div>
         )}
 
-        <div className="border-t border-gray-200 mt-8 pt-6 text-gray-500 text-sm">
+        <div className="border-t border-gray-200 mt-8 pt-6 text-gray-500 text-sm text-center lg:text-left">
           <span className="block mb-2">Program:</span>
           <span>Luni - Sâmbătă: 09:00 - 18:00</span>
           <br />
@@ -115,14 +135,14 @@ export default function ContactPage() {
       </div>
 
       {/* Right: Google Map */}
-      <div className="flex-1 w-full h-[450px] lg:h-[90vh] relative lg:mr-8">
+      <div className="w-full lg:w-[600px] flex-shrink-0 h-[250px] sm:h-[350px] md:h-[450px] lg:h-[90vh] relative mx-auto max-w-2xl lg:mr-8 mb-8 lg:mb-0">
         <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl">
           <iframe
             title="Google Maps"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.96708507532!2d27.57675841559216!3d47.15845497915845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ff59e839b168f%3A0xa497ed13c84ad8eb!2sIa%C8%99i!5e0!3m2!1sro!2sro!4v1683126860491!5m2!1sro!2sro"
             width="100%"
             height="100%"
-            style={{ border: 0 }}
+            style={{ border: 0, minHeight: "250px" }}
             allowFullScreen={true}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

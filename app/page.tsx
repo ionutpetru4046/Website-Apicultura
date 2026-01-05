@@ -6,10 +6,10 @@ import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-yellow-50"> {/* Setează fundalul ca pe celelalte pagini */}
       <section className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <h1 className="text-5xl font-serif font-bold leading-tight mb-6">
+          <h1 className="text-5xl font-serif font-bold text-yellow-700 leading-tight mb-6">
             Miere naturală <br /> direct de la apicultor
           </h1>
 
@@ -37,7 +37,7 @@ export default function Home() {
 
         <div className="w-full h-80 bg-yellow-100 rounded-xl flex items-center justify-center overflow-hidden">
           <img
-            src="/images/Honey Dish Insects.jpg"
+            src="/images/stupina1.jpg"
             alt="Stupina"
             className="object-cover w-full h-full"
           />
