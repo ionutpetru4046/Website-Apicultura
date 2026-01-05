@@ -42,7 +42,7 @@ export default function ContactPage() {
             </a>
           </li>
           <li>
-            <strong>Locație:</strong> România, Județul Iași, Str. Stupinei nr. 15
+            <strong>Locație:</strong> România, Județul Bihor, Loc Pestis Oras Alesd Str. Valea Mori nr. 384
           </li>
         </ul>
 
