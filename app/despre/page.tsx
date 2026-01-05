@@ -21,7 +21,7 @@ export default function DesprePage() {
 
         <div className="bg-yellow-100 rounded-xl p-6 md:flex md:items-center gap-10 shadow-md mb-10">
           <img
-            src="/images/beekeeper.png"
+            src="/images/stupina15.jpg"
             alt="Apicultor"
             className="w-36 h-36 object-contain mx-auto md:mx-0 mb-4 md:mb-0"
           />
@@ -52,7 +52,7 @@ export default function DesprePage() {
           </div>
           <div className="bg-white rounded-2xl shadow p-6 flex flex-col items-center">
             <img
-              src="/images/honeycomb.png"
+              src="/images/stupina8.jpg"
               alt="Fagure"
               className="h-20 w-20 mb-4"
             />
