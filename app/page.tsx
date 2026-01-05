@@ -35,10 +35,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full h-80 bg-yellow-100 rounded-xl flex items-center justify-center">
-          <span className="text-yellow-700 font-semibold">
-            Imagine stupină
-          </span>
+        <div className="w-full h-80 bg-yellow-100 rounded-xl flex items-center justify-center overflow-hidden">
+          <img
+            src="/images/Honey Dish Insects.jpg"
+            alt="Stupina"
+            className="object-cover w-full h-full"
+          />
         </div>
       </section>
       <Benefits />
