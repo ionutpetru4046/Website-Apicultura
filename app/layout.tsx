@@ -1,4 +1,5 @@
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: "Apicultură Naturală",
@@ -13,6 +14,7 @@ export default function RootLayout({
   return (
     <html lang="ro">
       <body className="bg-[#FFFDF8] text-[#2B2B2B]">
+        <Navbar />
         {children}
       </body>
     </html>
