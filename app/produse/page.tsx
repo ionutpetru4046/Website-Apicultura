@@ -26,7 +26,7 @@ export default function ProdusePage() {
               <li>Rămâne fluidă mult timp, nu cristalizează ușor</li>
             </ul>
             <span className="inline-block mt-auto bg-yellow-100 text-yellow-800 rounded px-4 py-1 text-sm font-medium">
-              În curând
+              In Stock si pe Comanda Online
             </span>
           </div>
 
@@ -45,7 +45,7 @@ export default function ProdusePage() {
               <li>Aromă intensă, versatilă în bucătărie</li>
             </ul>
             <span className="inline-block mt-auto bg-yellow-100 text-yellow-800 rounded px-4 py-1 text-sm font-medium">
-              În curând
+              In Stock si pe Comanda Online
             </span>
           </div>
 
@@ -64,7 +64,7 @@ export default function ProdusePage() {
               <li>Cules manual, uscat natural</li>
             </ul>
             <span className="inline-block mt-auto bg-yellow-100 text-yellow-800 rounded px-4 py-1 text-sm font-medium">
-              În curând
+              In Stock si pe Comanda Online
             </span>
           </div>
         </div>

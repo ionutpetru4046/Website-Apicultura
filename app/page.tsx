@@ -6,7 +6,7 @@ import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
-    <main className="bg-yellow-50"> {/* Setează fundalul ca pe celelalte pagini */}
+    <main className="bg-yellow-50">
       <section className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h1 className="text-5xl font-serif font-bold text-yellow-700 leading-tight mb-6">
