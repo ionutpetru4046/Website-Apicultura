@@ -1,7 +1,7 @@
 export default function ProdusePage() {
     return (
       <section className="max-w-7xl mx-auto px-6 py-20">
-        <h1 className="text-4xl font-bold mb-6">Produsele noastre</h1>
+        <h1 className="text-4xl font-serif leading-tight font-bold mb-6">Produsele noastre</h1>
   
         <p className="text-gray-600 mb-10">
           Descoperă gama noastră de produse apicole naturale.

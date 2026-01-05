@@ -5,7 +5,7 @@ export default function Home() {
     <main>
       <section className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <h1 className="text-5xl font-bold leading-tight mb-6">
+          <h1 className="text-5xl font-serif font-bold leading-tight mb-6">
             Miere naturală <br /> direct de la apicultor
           </h1>
 
