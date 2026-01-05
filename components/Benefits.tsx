@@ -7,7 +7,7 @@ export default function Benefits() {
           </h2>
   
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="p-6 border rounded-xl text-center">
+            <div className="p-6 border rounded-xl text-center bg-[#FFFDF8] hover:shadow-md transition">
               <h3 className="text-xl font-semibold mb-3">
                 100% Naturală
               </h3>
@@ -16,7 +16,7 @@ export default function Benefits() {
               </p>
             </div>
   
-            <div className="p-6 border rounded-xl text-center">
+            <div className="p-6 border rounded-xl text-center bg-[#FFFDF8] hover:shadow-md transition">
               <h3 className="text-xl font-semibold mb-3">
                 Producție Locală
               </h3>
@@ -25,7 +25,7 @@ export default function Benefits() {
               </p>
             </div>
   
-            <div className="p-6 border rounded-xl text-center">
+            <div className="p-6 border rounded-xl text-center bg-[#FFFDF8] hover:shadow-md transition">
               <h3 className="text-xl font-semibold mb-3">
                 Calitate Garantată
               </h3>
