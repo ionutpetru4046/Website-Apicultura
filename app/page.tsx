@@ -1,4 +1,8 @@
 import Benefits from "@/components/Benefits";
+import FAQ from "@/components/FAQ";
+import Gallery from "@/components/Gallery";
+import Newsletter from "@/components/Newsletter";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -38,6 +42,10 @@ export default function Home() {
         </div>
       </section>
       <Benefits />
+      <Testimonials />
+      <Gallery />
+      <FAQ />
+      <Newsletter />
     </main>
   );
 }
