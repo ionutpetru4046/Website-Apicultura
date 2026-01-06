@@ -67,7 +67,7 @@ export default function Navbar() {
           onClick={() => setMenuOpen(false)}
         ></div>
         <nav
-          className={`fixed top-0 right-0 h-full w-3/4 max-w-xs bg-white shadow-lg z-40 pt-24 px-7 transition-transform duration-300 md:hidden
+          className={`fixed top-0 right-0 h-full w-3/4 max-w-xs bg-amber-50 shadow-lg z-40 pt-24 px-7 transition-transform duration-300 md:hidden
             ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
           aria-hidden={!menuOpen}
         >
