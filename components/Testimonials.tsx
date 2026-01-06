@@ -43,7 +43,7 @@ export default function Testimonials() {
 
         {/* Card testimonial */}
         <div className="p-8 bg-white rounded-xl shadow-lg transition-transform duration-500 ease-in-out">
-          <p className="text-gray-600 mb-4">"{reviews[current].text}"</p>
+          <p className="text-gray-600 mb-4">{reviews[current].text}</p>
           <p className="font-semibold text-yellow-600">{reviews[current].name}</p>
         </div>
 
