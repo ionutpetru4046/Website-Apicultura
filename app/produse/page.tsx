@@ -67,6 +67,63 @@ export default function ProdusePage() {
               In Stock si pe Comanda Online
             </span>
           </div>
+
+          {/* Propolis */}
+          <div className="bg-white/90 border border-yellow-100 rounded-2xl shadow-xl p-7 flex flex-col items-center group transition hover:shadow-2xl">
+            <img
+              src="/images/propolis.jpg"
+              alt="Propolis"
+              className="w-28 h-28 object-contain mb-4 drop-shadow"
+              loading="lazy"
+            />
+            <h3 className="font-bold text-yellow-700 text-xl mb-2 font-serif">Propolis natural</h3>
+            <ul className="text-gray-700 text-base mb-4 list-disc pl-4 text-left space-y-1">
+              <li>Puternic antioxidant și antibacterian natural</li>
+              <li>Utilizat pentru întărirea sistemului imunitar</li>
+              <li>Recoltat cu grijă, 100% natural, fără adaosuri</li>
+            </ul>
+            <span className="inline-block mt-auto bg-yellow-100 text-yellow-800 rounded px-4 py-1 text-sm font-medium">
+              In Stock si pe Comanda Online
+            </span>
+          </div>
+
+          {/* Miere cu lăptișor de matcă */}
+          <div className="bg-white/90 border border-yellow-100 rounded-2xl shadow-xl p-7 flex flex-col items-center group transition hover:shadow-2xl">
+            <img
+              src="/images/laptisor-de-matca.jpg"
+              alt="Miere cu lăptișor de matcă"
+              className="w-28 h-28 object-contain mb-4 drop-shadow"
+              loading="lazy"
+            />
+            <h3 className="font-bold text-yellow-700 text-xl mb-2 font-serif">Miere cu lăptișor de matcă</h3>
+            <ul className="text-gray-700 text-base mb-4 list-disc pl-4 text-left space-y-1">
+              <li>Combinație unică între miere și lăptișor de matcă pur</li>
+              <li>Recomandată pentru vitalitate, refacere și imunitate</li>
+              <li>Produs exclusiv apicol, pentru întreaga familie</li>
+            </ul>
+            <span className="inline-block mt-auto bg-yellow-100 text-yellow-800 rounded px-4 py-1 text-sm font-medium">
+              In Stock si pe Comanda Online
+            </span>
+          </div>
+
+          {/* Fagure la borcan */}
+          <div className="bg-white/90 border border-yellow-100 rounded-2xl shadow-xl p-7 flex flex-col items-center group transition hover:shadow-2xl">
+            <img
+              src="/images/fagure-borcan.jpg"
+              alt="Fagure la borcan"
+              className="w-28 h-28 object-contain mb-4 drop-shadow"
+              loading="lazy"
+            />
+            <h3 className="font-bold text-yellow-700 text-xl mb-2 font-serif">Fagure la borcan</h3>
+            <ul className="text-gray-700 text-base mb-4 list-disc pl-4 text-left space-y-1">
+              <li>Fagure natural îmbibat cu miere proaspătă</li>
+              <li>Textură unică, gust autentic de stup</li>
+              <li>Garantat nerafinat, 100% direct din stupul familiei</li>
+            </ul>
+            <span className="inline-block mt-auto bg-yellow-100 text-yellow-800 rounded px-4 py-1 text-sm font-medium">
+              In Stock si pe Comanda Online
+            </span>
+          </div>
         </div>
 
         {/* Extra info section */}
