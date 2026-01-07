@@ -56,12 +56,9 @@ export default function Gallery() {
         {selectedIndex !== null && (
           <div
             className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
-            // Elimină onClick-ul aici pentru a NU închide la click pe overlay
-            // onClick={() => setSelectedIndex(null)}
           >
             <div
               className="bg-white rounded-xl overflow-hidden max-w-3xl w-full relative flex items-center"
-              // Asigură că click-ul pe containerul imaginii nu propagă în overlay
               onClick={e => e.stopPropagation()}
             >
               {/* Left arrow */}
