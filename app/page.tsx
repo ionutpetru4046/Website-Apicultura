@@ -3,6 +3,7 @@ import FAQ from "@/components/FAQ";
 import Gallery from "@/components/Gallery";
 import Newsletter from "@/components/Newsletter";
 import Testimonials from "@/components/Testimonials";
+import ProdusePage from "./produse/page";
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
         </div>
       </section>
       <Benefits />
+      <ProdusePage />
       <Testimonials />
       <Gallery />
       <FAQ />
