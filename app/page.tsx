@@ -4,6 +4,8 @@ import Gallery from "@/components/Gallery";
 import Newsletter from "@/components/Newsletter";
 import Testimonials from "@/components/Testimonials";
 import ProdusePage from "./produse/page";
+import ContactPage from "./contact/page";
+import DesprePage from "./despre/page";
 
 export default function Home() {
   return (
@@ -45,11 +47,13 @@ export default function Home() {
         </div>
       </section>
       <Benefits />
+      <DesprePage />
       <ProdusePage />
       <Testimonials />
       <Gallery />
       <FAQ />
       <Newsletter />
+      <ContactPage />
     </main>
   );
 }
