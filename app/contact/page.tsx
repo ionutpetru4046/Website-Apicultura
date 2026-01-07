@@ -147,7 +147,7 @@ export default function ContactPage() {
       </div>
 
       {/* RIGHT – MAP */}
-      <div className="w-full lg:w-[600px] h-[300px] sm:h-[400px] lg:h-[90vh] p-4 lg:p-0">
+      <div className="w-full lg:w-[600px] h-[300px] sm:h-[400px] lg:h-[90vh] p-4 mt-12 lg:p-0">
         <div className="w-full h-full rounded-2xl overflow-hidden shadow-2xl">
           <iframe
             title="Google Maps"
