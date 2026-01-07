@@ -151,7 +151,7 @@ export default function ContactPage() {
         <div className="w-full h-full rounded-2xl overflow-hidden shadow-2xl">
           <iframe
             title="Google Maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.96708507532!2d27.57675841559216!3d47.15845497915845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ff59e839b168f%3A0xa497ed13c84ad8eb!2sIa%C8%99i!5e0!3m2!1sro!2sro!4v1683126860491"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43466.99553773521!2d21.87034275682663!3d47.04650065304068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4746477081b7a34f%3A0x191c46db71fa7f5!2sBihor%2C%20Romania!5e0!3m2!1sro!2sro!4v1717924834000"
             width="100%"
             height="100%"
             loading="lazy"
