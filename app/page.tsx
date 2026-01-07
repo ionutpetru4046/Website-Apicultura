@@ -31,7 +31,7 @@ export default function Home() {
 
             <a
               href="/contact"
-              className="border border-yellow-500 hover:bg-amber-600 text-white px-6 py-3 rounded-md font-medium"
+              className="border border-yellow-500 hover:bg-amber-600 text-yellow-700 px-6 py-3 rounded-md font-medium"
             >
               Contact
             </a>
