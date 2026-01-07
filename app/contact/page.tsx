@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useState } from "react";
 
@@ -18,135 +18,145 @@ export default function ContactPage() {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    // aici ai putea apela un API sau trimite email
+    // aici vei conecta ulterior backend / email
     setSubmitted(true);
   }
 
   return (
-    <section className="min-h-screen flex flex-col-reverse lg:flex-row items-stretch justify-center bg-gradient-to-br from-yellow-50 to-white px-0 py-0">
-      {/* Left: Contact Info + Form */}
-      <div className="w-full max-w-xl p-4 sm:p-8 bg-white rounded-2xl shadow-xl mx-auto mb-8 lg:mb-0 lg:m-12 flex flex-col justify-center">
-        <h1 className="text-3xl sm:text-4xl font-serif leading-tight font-bold mb-4 text-yellow-700 text-center lg:text-left">
+    <section className="min-h-screen bg-gradient-to-br from-yellow-50 to-white flex flex-col-reverse lg:flex-row items-stretch">
+      {/* LEFT */}
+      <div className="w-full max-w-xl mx-auto p-6 sm:p-10 bg-white rounded-2xl shadow-xl lg:m-12 flex flex-col justify-center">
+        <h1 className="text-4xl font-serif font-bold text-yellow-700 mb-4">
           Contactează-ne
         </h1>
-        <p className="text-gray-600 mb-6 text-center lg:text-left">
-          Suntem bucuroși să răspundem rapid la orice solicitare sau comandă. Completează formularul sau folosește datele de contact de mai jos.
+
+        <p className="text-gray-600 mb-8">
+          Pentru comenzi, informații despre miere sau livrare, ne poți contacta
+          rapid prin telefon, WhatsApp sau email.
         </p>
-        <ul className="space-y-2 text-gray-700 mb-8 text-center lg:text-left text-base sm:text-lg">
+
+        {/* CONTACT INFO */}
+        <ul className="space-y-3 text-gray-700 mb-8 text-base">
           <li>
             <strong>Telefon:</strong>{" "}
-            <a className="hover:underline break-all" href="tel:07XXXXXXXX">
+            <a href="tel:07XXXXXXXX" className="hover:underline">
               07XXXXXXXX
             </a>
           </li>
+
+          <li>
+            <strong>WhatsApp:</strong>{" "}
+            <a
+              href="https://wa.me/407XXXXXXXX?text=Salut!%20Sunt%20interesat%20de%20miere."
+              target="_blank"
+              className="text-green-600 font-medium hover:underline"
+            >
+              Scrie-ne pe WhatsApp
+            </a>
+          </li>
+
           <li>
             <strong>Email:</strong>{" "}
-            <a className="hover:underline break-all" href="mailto:contact@apicultura.ro">
+            <a
+              href="mailto:contact@apicultura.ro"
+              className="hover:underline break-all"
+            >
               contact@apicultura.ro
             </a>
           </li>
+
           <li>
-            <strong>Locație:</strong> <span className="break-words">România, Județul Bihor, Loc Pestis Oras Alesd Str. Valea Mori nr. 384</span>
+            <strong>Zonă de livrare:</strong>{" "}
+            <span>România – curier rapid (1–3 zile)</span>
+          </li>
+
+          <li>
+            <strong>Adresă:</strong>{" "}
+            <span>
+              Județul Bihor, Loc. Peștiș, Oraș Aleșd, Str. Valea Morii nr. 384
+            </span>
           </li>
         </ul>
 
+        {/* FORM */}
         {!submitted ? (
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
-              <label
-                className="block mb-1 font-medium text-gray-700"
-                htmlFor="name"
-              >
-                Nume
-              </label>
+              <label className="block mb-1 font-medium">Nume</label>
               <input
                 type="text"
-                id="name"
                 name="name"
                 required
                 value={form.name}
                 onChange={handleChange}
-                className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-yellow-400 outline-none transition text-base"
+                className="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-yellow-400 outline-none"
                 placeholder="Numele tău"
-                autoComplete="name"
               />
             </div>
+
             <div>
-              <label
-                className="block mb-1 font-medium text-gray-700"
-                htmlFor="email"
-              >
-                Email
-              </label>
+              <label className="block mb-1 font-medium">Email</label>
               <input
                 type="email"
-                id="email"
                 name="email"
                 required
                 value={form.email}
                 onChange={handleChange}
-                className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-yellow-400 outline-none transition text-base"
+                className="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-yellow-400 outline-none"
                 placeholder="Email-ul tău"
-                autoComplete="email"
               />
             </div>
+
             <div>
-              <label
-                className="block mb-1 font-medium text-gray-700"
-                htmlFor="message"
-              >
-                Mesaj
-              </label>
+              <label className="block mb-1 font-medium">Mesaj</label>
               <textarea
-                id="message"
                 name="message"
                 required
-                rows={5}
+                rows={4}
                 value={form.message}
                 onChange={handleChange}
-                className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-yellow-400 outline-none transition resize-none text-base"
-                placeholder="Scrie mesajul tău aici..."
+                className="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-yellow-400 outline-none resize-none"
+                placeholder="Ex: Aș dori 3 borcane de miere polifloră"
               />
             </div>
+
             <button
               type="submit"
-              className="w-full bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg font-semibold transition shadow disabled:opacity-60"
               disabled={
                 !form.name.trim() ||
                 !form.email.trim() ||
                 !form.message.trim()
               }
+              className="w-full bg-yellow-500 hover:bg-yellow-600 text-white py-3 rounded-lg font-semibold transition"
             >
               Trimite mesajul
             </button>
           </form>
         ) : (
-          <div className="bg-yellow-100 rounded-lg p-6 text-center text-yellow-800 font-semibold mt-6">
-            Mulțumim pentru mesaj! Te vom contacta în cel mai scurt timp.
+          <div className="bg-yellow-100 p-6 rounded-lg text-center font-semibold text-yellow-800">
+            Mulțumim! Te vom contacta în cel mai scurt timp.
           </div>
         )}
 
-        <div className="border-t border-gray-200 mt-8 pt-6 text-gray-500 text-sm text-center lg:text-left">
-          <span className="block mb-2">Program:</span>
-          <span>Luni - Sâmbătă: 09:00 - 18:00</span>
-          <br />
-          <span>Duminică: Închis</span>
+        {/* PROGRAM */}
+        <div className="border-t mt-8 pt-6 text-sm text-gray-600">
+          <p className="font-medium mb-1">Program:</p>
+          <p>Luni – Sâmbătă: 09:00 – 18:00</p>
+          <p>Duminică: Închis</p>
         </div>
       </div>
 
-      {/* Right: Google Map */}
-      <div className="w-full lg:w-[600px] flex-shrink-0 h-[250px] sm:h-[350px] md:h-[450px] lg:h-[90vh] relative mx-auto max-w-2xl lg:mr-8 mb-8 lg:mb-0">
-        <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl">
+      {/* RIGHT – MAP */}
+      <div className="w-full lg:w-[600px] h-[300px] sm:h-[400px] lg:h-[90vh] p-4 lg:p-0">
+        <div className="w-full h-full rounded-2xl overflow-hidden shadow-2xl">
           <iframe
             title="Google Maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.96708507532!2d27.57675841559216!3d47.15845497915845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ff59e839b168f%3A0xa497ed13c84ad8eb!2sIa%C8%99i!5e0!3m2!1sro!2sro!4v1683126860491!5m2!1sro!2sro"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.96708507532!2d27.57675841559216!3d47.15845497915845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ff59e839b168f%3A0xa497ed13c84ad8eb!2sIa%C8%99i!5e0!3m2!1sro!2sro!4v1683126860491"
             width="100%"
             height="100%"
-            style={{ border: 0, minHeight: "250px" }}
-            allowFullScreen={true}
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+            style={{ border: 0 }}
+          />
         </div>
       </div>
     </section>
