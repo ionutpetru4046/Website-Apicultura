@@ -16,8 +16,13 @@ export default function Navbar() {
   return (
     <header className="w-full border-b border-yellow-200 bg-white z-30 relative">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative">
-        <Link href="/" className="text-2xl font-bold text-yellow-600 z-40">
-          ApiculturăNaturala.ro
+        <Link href="/" className="flex items-center gap-2 text-2xl text-yellow-600 z-40">
+          <img
+            src="/images/littlebee.png"
+            alt="Apicultură Naturala Logo"
+            className="h-20 w-20 object-contain border-2 rounded-full"
+          />
+          ApiculturaNaturala.ro
         </Link>
 
         {/* Desktop nav */}
