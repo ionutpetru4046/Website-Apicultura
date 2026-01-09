@@ -10,6 +10,7 @@ export default function Navbar() {
     { href: "/", label: "Acasă" },
     { href: "/despre", label: "Despre" },
     { href: "/produse", label: "Produse" },
+    { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -22,7 +23,7 @@ export default function Navbar() {
             alt="Apicultură Naturala Logo"
             className="h-20 w-20 object-contain border-2 rounded-full"
           />
-          ApiculturaNaturala.ro
+          ApiculturaNaturala
         </Link>
 
         {/* Desktop nav */}
