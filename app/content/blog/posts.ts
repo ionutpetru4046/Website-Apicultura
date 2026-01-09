@@ -1,31 +1,30 @@
 export const posts = [
     {
-      slug: "mierea-naturala-beneficii-si-utilizari",
-      title: "Mierea naturală – beneficii și utilizări",
-      excerpt:
-        "Descoperă de ce mierea naturală este unul dintre cele mai sănătoase produse și cum o poți consuma zilnic.",
-      date: "2024-10-01",
-      content: `
-        <p>
-          Mierea naturală este unul dintre cele mai vechi și valoroase alimente
-          oferite de natură. Este apreciată atât pentru gust, cât și pentru
-          proprietățile sale terapeutice.
-        </p>
-  
-        <h2>Beneficiile mierii naturale</h2>
-        <ul>
-          <li>Întărește sistemul imunitar</li>
-          <li>Oferă energie naturală</li>
-          <li>Are proprietăți antibacteriene</li>
-          <li>Ajută digestia</li>
-        </ul>
-  
-        <p>
-          Pentru rezultate optime, se recomandă consumul unei linguri de miere
-          dimineața, pe stomacul gol.
-        </p>
-      `,
-    },
+        slug: "mierea-naturala-beneficii-si-utilizari",
+        title: "Mierea naturală – beneficii și utilizări",
+        excerpt:
+          "Descoperă de ce mierea naturală este unul dintre cele mai sănătoase produse și cum o poți consuma zilnic.",
+        date: "2024-10-01",
+        cover: "/public/images/miere-poliflora.jpg",
+        seo: {
+          title: "Mierea naturală – beneficii, utilizări și proprietăți",
+          description:
+            "Află beneficiile mierii naturale, cum se consumă corect și de ce este atât de importantă pentru sănătate.",
+        },
+        content: `
+          <p>
+            Mierea naturală este unul dintre cele mai vechi și valoroase alimente
+            oferite de natură.
+          </p>
+    
+          <h2>Beneficiile mierii naturale</h2>
+          <ul>
+            <li>Întărește sistemul imunitar</li>
+            <li>Oferă energie naturală</li>
+            <li>Are proprietăți antibacteriene</li>
+          </ul>
+        `,
+      },
     {
       slug: "cum-alegi-mierea-naturala-autentica",
       title: "Cum alegi mierea naturală autentică",
