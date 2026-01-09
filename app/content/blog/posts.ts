@@ -31,6 +31,12 @@ export const posts = [
       excerpt:
         "Află cum să recunoști mierea naturală autentică și să eviți produsele procesate sau contrafăcute.",
       date: "2024-10-05",
+      cover: "/public/images/miere-poliflora.jpg",
+        seo: {
+          title: "Cum alegi mierea naturala autentica",
+          description:
+            "Află beneficiile mierii naturale, cum se consumă corect și de ce este atât de importantă pentru sănătate.",
+        },
       content: `
         <p>
           Alegerea mierii naturale autentice este esențială pentru a beneficia
