@@ -32,7 +32,7 @@ export default function Footer() {
                   href="mailto:contact@apicultura.ro"
                   className="hover:underline transition"
                 >
-                  Email: contact@apicultura.ro
+                  Email: apiculturaNaturala@yahoo.com
                 </a>
               </li>
               <li>
