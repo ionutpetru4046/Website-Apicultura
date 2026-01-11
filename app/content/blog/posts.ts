@@ -31,7 +31,7 @@ export const posts = [
     excerpt:
       "Află cum să recunoști mierea naturală autentică și să eviți produsele procesate sau contrafăcute.",
     date: "2024-10-05",
-    cover: "/images/miere-poliflora.jpg",
+    cover: "/images/stupina8.jpg",
     seo: {
       title: "Cum alegi mierea naturala autentica",
       description:
@@ -102,7 +102,7 @@ export const posts = [
     excerpt:
       "Polenul apicol este o sursă naturală de energie și nutrienți esențiali pentru organism.",
     date: "2024-10-12",
-    cover: "/images/polen-apicol.jpg",
+    cover: "/images/polen.jpg",
     seo: {
       title: "Polenul apicol – beneficii, proprietăți și mod de consum",
       description:
