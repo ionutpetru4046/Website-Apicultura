@@ -132,5 +132,49 @@ export const posts = [
         Pentru rezultate optime, este recomandată o cură de minimum 30 de zile.
       </p>
     `,
+  },
+  {
+    slug: "laptisorul-de-matca-beneficii-si-mod-de-consum",
+    title: "Lăptișorul de matcă – beneficii și mod de consum",
+    excerpt:
+      "Lăptișorul de matcă este unul dintre cele mai valoroase produse apicole, recunoscut pentru efectele sale revitalizante.",
+    date: "2024-10-15",
+    cover: "/images/laptisor-de-matca.jpg",
+    seo: {
+      title: "Lăptișorul de matcă – beneficii, proprietăți și administrare",
+      description:
+        "Află ce este lăptișorul de matcă, ce beneficii are pentru organism și cum se consumă corect.",
+    },
+    content: `
+      <p>
+        Lăptișorul de matcă este un produs apicol rar și extrem de valoros,
+        destinat exclusiv hrănirii reginei albinelor.
+      </p>
+  
+      <h2>Ce este lăptișorul de matcă?</h2>
+      <p>
+        Lăptișorul de matcă este o substanță naturală secretată de albinele
+        lucrătoare, bogată în vitamine, aminoacizi, enzime și acizi grași esențiali.
+      </p>
+  
+      <h2>Beneficiile lăptișorului de matcă</h2>
+      <ul>
+        <li>Crește nivelul de energie și vitalitate</li>
+        <li>Susține sistemul imunitar</li>
+        <li>Ajută la echilibrarea hormonală</li>
+        <li>Îmbunătățește memoria și concentrarea</li>
+        <li>Încetinește procesele de îmbătrânire</li>
+      </ul>
+  
+      <h2>Cum se consumă lăptișorul de matcă</h2>
+      <p>
+        Lăptișorul de matcă se consumă de obicei dimineața, pe stomacul gol,
+        sublingual, pentru o absorbție optimă.
+      </p>
+  
+      <p>
+        Cura recomandată este de 20–30 de zile, urmată de o pauză.
+      </p>
+    `,
   }
 ];
