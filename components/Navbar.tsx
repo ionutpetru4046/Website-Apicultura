@@ -25,6 +25,7 @@ export default function Navbar() {
             width={80}
             height={80}
             className="object-contain border-2 rounded-full"
+            priority
           />
           ApiculturaNaturala
         </Link>
