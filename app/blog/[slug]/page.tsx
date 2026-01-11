@@ -1,6 +1,7 @@
 import { posts } from "../../content/blog/posts";
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 type Props = {
@@ -9,6 +10,56 @@ type Props = {
   }>;
 };
 
+/* =========================
+   SEO – generateMetadata
+========================= */
+export async function generateMetadata(
+  { params }: { params: Promise<{ slug: string }> }
+): Promise<Metadata> {
+  const { slug } = await params;
+
+  const post = posts.find((p) => p.slug === slug);
+
+  if (!post) {
+    return {
+      title: "Articol negăsit | Apicultură Naturală",
+      description: "Articolul căutat nu există.",
+    };
+  }
+
+  return {
+    title: post.seo?.title || post.title,
+    description: post.seo?.description || post.excerpt,
+
+    openGraph: {
+      title: post.seo?.title || post.title,
+      description: post.seo?.description || post.excerpt,
+      url: `https://apicultura-ta.ro/blog/${post.slug}`,
+      siteName: "Apicultură Naturală",
+      images: [
+        {
+          url: post.cover,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+      locale: "ro_RO",
+      type: "article",
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: post.seo?.title || post.title,
+      description: post.seo?.description || post.excerpt,
+      images: [post.cover],
+    },
+  };
+}
+
+/* =========================
+   PAGE COMPONENT
+========================= */
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
 
@@ -25,13 +76,9 @@ export default async function BlogPostPage({ params }: Props) {
     <article className="max-w-4xl mx-auto px-6 py-16">
       {/* Breadcrumb */}
       <nav className="text-sm text-gray-500 mb-6">
-        <Link href="/" className="hover:underline">
-          Acasă
-        </Link>
+        <Link href="/" className="hover:underline">Acasă</Link>
         <span className="mx-2">→</span>
-        <Link href="/blog" className="hover:underline">
-          Blog
-        </Link>
+        <Link href="/blog" className="hover:underline">Blog</Link>
         <span className="mx-2">→</span>
         <span className="text-gray-700">{post.title}</span>
       </nav>
@@ -54,10 +101,8 @@ export default async function BlogPostPage({ params }: Props) {
         <h1 className="text-3xl md:text-4xl font-serif font-bold text-yellow-700 mb-3">
           {post.title}
         </h1>
-
         <p className="text-sm text-gray-500">
-          Publicat la{" "}
-          {new Date(post.date).toLocaleDateString("ro-RO")}
+          Publicat la {new Date(post.date).toLocaleDateString("ro-RO")}
         </p>
       </header>
 
@@ -75,7 +120,6 @@ export default async function BlogPostPage({ params }: Props) {
         <h3 className="text-2xl font-serif font-bold text-yellow-700 mb-4">
           Produse apicole 100% naturale
         </h3>
-
         <p className="text-gray-600 mb-6">
           Descoperă mierea, propolisul și lăptișorul de matcă direct de la apicultor.
         </p>
@@ -87,7 +131,6 @@ export default async function BlogPostPage({ params }: Props) {
           >
             Vezi produsele
           </Link>
-
           <Link
             href="/contact"
             className="border border-yellow-500 text-yellow-700 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-100 transition"
@@ -111,12 +154,8 @@ export default async function BlogPostPage({ params }: Props) {
                 href={`/blog/${p.slug}`}
                 className="block border rounded-xl p-6 hover:shadow-lg transition"
               >
-                <h4 className="text-lg font-semibold mb-2">
-                  {p.title}
-                </h4>
-                <p className="text-gray-600 text-sm">
-                  {p.excerpt}
-                </p>
+                <h4 className="text-lg font-semibold mb-2">{p.title}</h4>
+                <p className="text-gray-600 text-sm">{p.excerpt}</p>
               </Link>
             ))}
           </div>
