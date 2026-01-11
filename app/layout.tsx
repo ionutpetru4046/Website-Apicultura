@@ -6,33 +6,30 @@ import { Inter, Playfair_Display } from "next/font/google";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap", // folosește swap pentru performanță
 });
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
+  display: "swap",
 });
 
 export const metadata = {
+  title: "Apicultură Naturală",
+  description: "Miere naturală 100% direct de la apicultor",
   metadataBase: new URL("https://apicultura-ta.ro"),
-  title: {
-    default: "Apicultură Naturală",
-    template: "%s | Apicultură Naturală",
-  },
-  description:
-    "Produse apicole 100% naturale, recoltate cu grijă direct de la apicultor.",
   openGraph: {
     title: "Apicultură Naturală",
-    description:
-      "Miere, propolis și lăptișor de matcă direct de la apicultor, 100% natural.",
+    description: "Produse apicole naturale, sănătoase și pure",
     url: "https://apicultura-ta.ro",
-    siteName: "Apicultură Naturală",
+    siteName: "Apicultura Naturala",
     images: [
       {
-        url: "/images/stupina1.jpg",
+        url: "/images/littlebee.png",
         width: 1200,
         height: 630,
-        alt: "Miere naturală direct de la apicultor",
+        alt: "Logo Apicultura Naturala",
       },
     ],
     locale: "ro_RO",
@@ -41,9 +38,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Apicultură Naturală",
-    description:
-      "Produse apicole 100% naturale: miere, propolis, lăptișor de matcă.",
-    images: ["/images/stupina1.jpg"],
+    description: "Miere, propolis și lăptișor de matcă direct de la apicultor",
+    images: ["/images/littlebee.png"],
   },
 };
 

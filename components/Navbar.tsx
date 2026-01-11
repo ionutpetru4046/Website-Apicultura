@@ -80,6 +80,7 @@ export default function Navbar() {
           className={`fixed top-0 right-0 h-full w-3/4 max-w-xs bg-amber-50 shadow-lg z-40 pt-24 px-7 transition-transform duration-300 md:hidden
             ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
           aria-hidden={!menuOpen}
+          {...(!menuOpen ? { inert: true } : {})}
         >
           <ul className="flex flex-col gap-7 text-lg font-medium">
             {navLinks.map(({ href, label }) => (
