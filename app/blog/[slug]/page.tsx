@@ -17,9 +17,13 @@ export default async function BlogPostPage({ params }: Props) {
     notFound();
   }
 
+  const relatedPosts = posts
+    .filter((p) => p.slug !== post.slug)
+    .slice(0, 2);
+
   return (
     <article className="max-w-4xl mx-auto px-6 py-16">
-      {/* Cover */}
+      {/* Breadcrumb */}
       <nav className="text-sm text-gray-500 mb-6">
         <Link href="/" className="hover:underline">
           Acasă
@@ -31,15 +35,19 @@ export default async function BlogPostPage({ params }: Props) {
         <span className="mx-2">→</span>
         <span className="text-gray-700">{post.title}</span>
       </nav>
-      <div className="relative w-full h-[260px] md:h-[360px] rounded-2xl overflow-hidden shadow-lg mb-10">
-        <Image
-          src={post.cover}
-          alt={post.title}
-          fill
-          className="w-full h-[320px] object-cover rounded-2xl mb-10 shadow"
-          priority
-        />
-      </div>
+
+      {/* Cover */}
+      {post.cover && (
+        <div className="relative w-full h-[260px] md:h-[360px] rounded-2xl overflow-hidden shadow-lg mb-10">
+          <Image
+            src={post.cover}
+            alt={post.title}
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+      )}
 
       {/* Header */}
       <header className="mb-10">
@@ -48,41 +56,72 @@ export default async function BlogPostPage({ params }: Props) {
         </h1>
 
         <p className="text-sm text-gray-500">
-          Publicat la {new Date(post.date).toLocaleDateString("ro-RO")}
+          Publicat la{" "}
+          {new Date(post.date).toLocaleDateString("ro-RO")}
         </p>
       </header>
 
       {/* Content */}
       <section
-        className="prose prose-lg max-w-none prose-h2:text-yellow-700 prose-a:text-yellow-600 prose-ul:list-disc prose-ul:pl-6"
+        className="prose prose-lg max-w-none
+          prose-h2:text-yellow-700
+          prose-a:text-yellow-600
+          prose-ul:list-disc prose-ul:pl-6"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
 
       {/* CTA */}
       <div className="mt-16 bg-yellow-50 border border-yellow-200 rounded-2xl p-8 text-center">
-        <h3 className="text-2xl font-semibold text-yellow-700 mb-4">
+        <h3 className="text-2xl font-serif font-bold text-yellow-700 mb-4">
           Produse apicole 100% naturale
         </h3>
+
         <p className="text-gray-600 mb-6">
-          Descoperă mierea, propolisul și lăptișorul de matcă direct de la
-          apicultor.
+          Descoperă mierea, propolisul și lăptișorul de matcă direct de la apicultor.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
+          <Link
             href="/produse"
-            className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg font-medium transition"
+            className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg font-semibold transition"
           >
             Vezi produsele
-          </a>
-          <a
+          </Link>
+
+          <Link
             href="/contact"
-            className="border border-yellow-500 text-yellow-700 px-6 py-3 rounded-lg font-medium hover:bg-yellow-100 transition"
+            className="border border-yellow-500 text-yellow-700 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-100 transition"
           >
             Contactează-ne
-          </a>
+          </Link>
         </div>
       </div>
+
+      {/* Articole similare */}
+      {relatedPosts.length > 0 && (
+        <section className="mt-20">
+          <h3 className="text-2xl font-serif font-bold mb-6 text-yellow-700">
+            Articole similare
+          </h3>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {relatedPosts.map((p) => (
+              <Link
+                key={p.slug}
+                href={`/blog/${p.slug}`}
+                className="block border rounded-xl p-6 hover:shadow-lg transition"
+              >
+                <h4 className="text-lg font-semibold mb-2">
+                  {p.title}
+                </h4>
+                <p className="text-gray-600 text-sm">
+                  {p.excerpt}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
     </article>
   );
 }
