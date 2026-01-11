@@ -1,17 +1,17 @@
 export const posts = [
-    {
-        slug: "mierea-naturala-beneficii-si-utilizari",
-        title: "Mierea naturală – beneficii și utilizări",
-        excerpt:
-          "Descoperă de ce mierea naturală este unul dintre cele mai sănătoase produse și cum o poți consuma zilnic.",
-        date: "2024-10-01",
-        cover: "/images/miere-poliflora.jpg",
-        seo: {
-          title: "Mierea naturală – beneficii, utilizări și proprietăți",
-          description:
-            "Află beneficiile mierii naturale, cum se consumă corect și de ce este atât de importantă pentru sănătate.",
-        },
-        content: `
+  {
+    slug: "mierea-naturala-beneficii-si-utilizari",
+    title: "Mierea naturală – beneficii și utilizări",
+    excerpt:
+      "Descoperă de ce mierea naturală este unul dintre cele mai sănătoase produse și cum o poți consuma zilnic.",
+    date: "2024-10-01",
+    cover: "/images/miere-poliflora.jpg",
+    seo: {
+      title: "Mierea naturală – beneficii, utilizări și proprietăți",
+      description:
+        "Află beneficiile mierii naturale, cum se consumă corect și de ce este atât de importantă pentru sănătate.",
+    },
+    content: `
           <p>
             Mierea naturală este unul dintre cele mai vechi și valoroase alimente
             oferite de natură.
@@ -24,20 +24,20 @@ export const posts = [
             <li>Are proprietăți antibacteriene</li>
           </ul>
         `,
-      },
-    {
-      slug: "cum-alegi-mierea-naturala-autentica",
-      title: "Cum alegi mierea naturală autentică",
-      excerpt:
-        "Află cum să recunoști mierea naturală autentică și să eviți produsele procesate sau contrafăcute.",
-      date: "2024-10-05",
-      cover: "/public/images/miere-poliflora.jpg",
-        seo: {
-          title: "Cum alegi mierea naturala autentica",
-          description:
-            "Află beneficiile mierii naturale, cum se consumă corect și de ce este atât de importantă pentru sănătate.",
-        },
-      content: `
+  },
+  {
+    slug: "cum-alegi-mierea-naturala-autentica",
+    title: "Cum alegi mierea naturală autentică",
+    excerpt:
+      "Află cum să recunoști mierea naturală autentică și să eviți produsele procesate sau contrafăcute.",
+    date: "2024-10-05",
+    cover: "/images/miere-poliflora.jpg",
+    seo: {
+      title: "Cum alegi mierea naturala autentica",
+      description:
+        "Află beneficiile mierii naturale, cum se consumă corect și de ce este atât de importantă pentru sănătate.",
+    },
+    content: `
         <p>
           Alegerea mierii naturale autentice este esențială pentru a beneficia
           de toate proprietățile sale nutritive și terapeutice.
@@ -56,20 +56,20 @@ export const posts = [
           calitate, nu un defect.
         </p>
       `,
+  },
+  {
+    slug: "propolis-beneficii-utilizari-si-proprietati",
+    title: "Propolisul – beneficii, utilizări și proprietăți",
+    excerpt:
+      "Descoperă ce este propolisul, cum se folosește corect și de ce este considerat un antibiotic natural.",
+    date: "2024-10-10",
+    cover: "/images/propolis.jpg",
+    seo: {
+      title: "Propolisul – beneficii, utilizări și proprietăți naturale",
+      description:
+        "Află ce este propolisul, cum se administrează și ce beneficii are pentru imunitate și sănătate.",
     },
-    {
-      slug: "propolis-beneficii-utilizari-si-proprietati",
-      title: "Propolisul – beneficii, utilizări și proprietăți",
-      excerpt:
-        "Descoperă ce este propolisul, cum se folosește corect și de ce este considerat un antibiotic natural.",
-      date: "2024-10-10",
-      cover: "/images/propolis.jpg",
-      seo: {
-        title: "Propolisul – beneficii, utilizări și proprietăți naturale",
-        description:
-          "Află ce este propolisul, cum se administrează și ce beneficii are pentru imunitate și sănătate.",
-      },
-      content: `
+    content: `
         <p>
           Propolisul este un produs apicol valoros, folosit de albine pentru a
           proteja stupul împotriva bacteriilor și virusurilor.
@@ -95,7 +95,42 @@ export const posts = [
           recomandărilor producătorului.
         </p>
       `,
-    }
-    
-  ];
+  },
+  {
+    slug: "polenul-apicol-beneficii-si-mod-de-consum",
+    title: "Polenul apicol – beneficii și mod de consum",
+    excerpt:
+      "Polenul apicol este o sursă naturală de energie și nutrienți esențiali pentru organism.",
+    date: "2024-10-12",
+    cover: "/images/polen-apicol.jpg",
+    seo: {
+      title: "Polenul apicol – beneficii, proprietăți și mod de consum",
+      description:
+        "Descoperă beneficiile polenului apicol, cum se consumă corect și cui este recomandat.",
+    },
+    content: `
+      <p>
+        Polenul apicol este unul dintre cele mai complete alimente naturale,
+        conținând vitamine, minerale și aminoacizi esențiali.
+      </p>
   
+      <h2>De ce este polenul atât de valoros?</h2>
+      <ul>
+        <li>Crește nivelul de energie</li>
+        <li>Susține digestia</li>
+        <li>Îmbunătățește imunitatea</li>
+        <li>Ajută la detoxifierea organismului</li>
+      </ul>
+  
+      <h2>Cum se consumă polenul apicol</h2>
+      <p>
+        Polenul se consumă de obicei dimineața, simplu sau amestecat cu miere,
+        iaurt sau smoothie-uri.
+      </p>
+  
+      <p>
+        Pentru rezultate optime, este recomandată o cură de minimum 30 de zile.
+      </p>
+    `,
+  }
+];
