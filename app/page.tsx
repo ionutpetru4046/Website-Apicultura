@@ -47,6 +47,7 @@ export default function Home() {
             height={400}
             className="object-cover w-full h-full rounded-xl"
             priority
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
       </section>
