@@ -1,6 +1,7 @@
 'use client';
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -18,10 +19,12 @@ export default function Navbar() {
     <header className="w-full border-b border-yellow-200 bg-white z-30 relative">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative">
         <Link href="/" className="flex items-center gap-2 text-2xl text-yellow-600 z-40">
-          <img
+          <Image
             src="/images/littlebee.png"
             alt="Apicultură Naturala Logo"
-            className="h-20 w-20 object-contain border-2 rounded-full"
+            width={80}
+            height={80}
+            className="object-contain border-2 rounded-full"
           />
           ApiculturaNaturala
         </Link>
