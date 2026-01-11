@@ -1,4 +1,5 @@
 import { posts } from "../../content/blog/posts";
+import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
@@ -9,9 +10,9 @@ type Props = {
 };
 
 export default async function BlogPostPage({ params }: Props) {
-    const { slug } = await params;
+  const { slug } = await params;
 
-    const post = posts.find((p) => p.slug === slug);
+  const post = posts.find((p) => p.slug === slug);
   if (!post) {
     notFound();
   }
@@ -19,12 +20,23 @@ export default async function BlogPostPage({ params }: Props) {
   return (
     <article className="max-w-4xl mx-auto px-6 py-16">
       {/* Cover */}
+      <nav className="text-sm text-gray-500 mb-6">
+        <Link href="/" className="hover:underline">
+          Acasă
+        </Link>
+        <span className="mx-2">→</span>
+        <Link href="/blog" className="hover:underline">
+          Blog
+        </Link>
+        <span className="mx-2">→</span>
+        <span className="text-gray-700">{post.title}</span>
+      </nav>
       <div className="relative w-full h-[260px] md:h-[360px] rounded-2xl overflow-hidden shadow-lg mb-10">
         <Image
           src={post.cover}
           alt={post.title}
           fill
-          className="object-cover"
+          className="w-full h-[320px] object-cover rounded-2xl mb-10 shadow"
           priority
         />
       </div>
