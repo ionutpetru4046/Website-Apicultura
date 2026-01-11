@@ -1,59 +1,79 @@
+import Link from "next/link";
+import Image from "next/image";
 import Benefits from "@/components/Benefits";
-import FAQ from "@/components/FAQ";
-import Gallery from "@/components/Gallery";
-import Newsletter from "@/components/Newsletter";
 import Testimonials from "@/components/Testimonials";
-import ProdusePage from "./produse/page";
-import ContactPage from "./contact/page";
-import DesprePage from "./despre/page";
+import Gallery from "@/components/Gallery";
+import FAQ from "@/components/FAQ";
+import Newsletter from "@/components/Newsletter";
+
+// Transformăm paginile în secțiuni simple
+import DespreSection from "../app/despre/page";
+import ProduseSection from "../app/produse/page";
+import ContactSection from "../app/contact/page";
 
 export default function Home() {
   return (
     <main className="bg-yellow-50">
+      {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h1 className="text-5xl font-serif font-bold text-yellow-700 leading-tight mb-6">
             Miere naturală <br /> direct de la apicultor
           </h1>
-
           <p className="text-lg text-gray-600 mb-8">
-            Produse apicole 100% naturale, recoltate cu grijă din stupina
-            noastră locală.
+            Produse apicole 100% naturale, recoltate cu grijă din stupina noastră locală.
           </p>
-
           <div className="flex gap-4">
-            <a
+            <Link
               href="/produse"
-              className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-md font-medium"
+              className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-md font-medium transition"
             >
               Vezi produsele
-            </a>
-
-            <a
+            </Link>
+            <Link
               href="/contact"
-              className="border border-yellow-500 hover:bg-amber-600 text-yellow-700 px-6 py-3 rounded-md font-medium"
+              className="border border-yellow-500 hover:bg-yellow-100 text-yellow-700 px-6 py-3 rounded-md font-medium transition"
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
 
         <div className="w-full h-80 bg-yellow-100 rounded-xl flex items-center justify-center overflow-hidden">
-          <img
+          <Image
             src="/images/stupina1.jpg"
-            alt="Stupina"
-            className="object-cover w-full h-full"
+            alt="Stupina cu miere naturală"
+            width={600}
+            height={400}
+            className="object-cover w-full h-full rounded-xl"
+            priority
           />
         </div>
       </section>
+
+      {/* Beneficii */}
       <Benefits />
-      <DesprePage />
-      <ProdusePage />
+
+      {/* Despre noi */}
+      <DespreSection />
+
+      {/* Produse */}
+      <ProduseSection />
+
+      {/* Testimoniale */}
       <Testimonials />
+
+      {/* Galerie imagini */}
       <Gallery />
+
+      {/* FAQ */}
       <FAQ />
+
+      {/* Newsletter */}
       <Newsletter />
-      <ContactPage />
+
+      {/* Contact */}
+      <ContactSection />
     </main>
   );
 }
