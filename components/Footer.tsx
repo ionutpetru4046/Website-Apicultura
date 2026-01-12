@@ -29,7 +29,7 @@ export default function Footer() {
             <ul className="space-y-1 text-gray-700" aria-label="Social media links">
               <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="hover:underline transition">Facebook</a></li>
               <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="hover:underline transition">Instagram</a></li>
-              <li><a href="mailto:apiculturaBihor@yahoo.com" className="hover:underline transition">Trimite-ne un email</a></li>
+              <li><a href="mailto:miereNaturala@yahoo.com" className="hover:underline transition">Trimite-ne un email</a></li>
             </ul>
           </div>
         </nav>

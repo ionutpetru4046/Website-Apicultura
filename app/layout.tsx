@@ -6,7 +6,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  display: "swap", // folosește swap pentru performanță
+  display: "swap",
 });
 
 const playfair = Playfair_Display({

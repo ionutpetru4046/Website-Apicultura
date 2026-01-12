@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function ProdusePage() {
   return (
     <section className="min-h-screen bg-gradient-to-br from-yellow-50 to-white flex items-center">
@@ -13,10 +16,12 @@ export default function ProdusePage() {
         <div className="grid gap-10 md:grid-cols-3">
           {/* Miere de salcâm */}
           <div className="bg-white/90 border border-yellow-100 rounded-2xl shadow-xl p-7 flex flex-col items-center group transition hover:shadow-2xl">
-            <img
+            <Image
               src="/images/miere-salcam.jpg"
               alt="Miere de salcâm"
-              className="w-28 h-28 object-contain mb-4 drop-shadow"
+              width={100}
+              height={100}
+              className="object-contain mb-4 drop-shadow"
               loading="lazy"
             />
             <h3 className="font-bold text-yellow-700 text-xl mb-2 font-serif">Miere de salcâm</h3>
@@ -32,10 +37,12 @@ export default function ProdusePage() {
 
           {/* Miere polifloră */}
           <div className="bg-white/90 border border-yellow-100 rounded-2xl shadow-xl p-7 flex flex-col items-center group transition hover:shadow-2xl">
-            <img
+            <Image
               src="/images/miere-poliflora.jpg"
               alt="Miere polifloră"
-              className="w-28 h-28 object-contain mb-4 drop-shadow"
+              width={120}
+              height={120}
+              className="object-contain mb-4 drop-shadow"
               loading="lazy"
             />
             <h3 className="font-bold text-yellow-700 text-xl mb-2 font-serif">Miere polifloră</h3>
@@ -51,10 +58,12 @@ export default function ProdusePage() {
 
           {/* Polen natural crud */}
           <div className="bg-white/90 border border-yellow-100 rounded-2xl shadow-xl p-7 flex flex-col items-center group transition hover:shadow-2xl">
-            <img
+            <Image
               src="/images/polen.jpg"
               alt="Polen natural"
-              className="w-28 h-28 object-contain mb-4 drop-shadow"
+              width={120}
+              height={100}
+              className="object-contain mb-4 drop-shadow"
               loading="lazy"
             />
             <h3 className="font-bold text-yellow-700 text-xl mb-2 font-serif">Polen natural crud</h3>
@@ -70,10 +79,12 @@ export default function ProdusePage() {
 
           {/* Propolis */}
           <div className="bg-white/90 border border-yellow-100 rounded-2xl shadow-xl p-7 flex flex-col items-center group transition hover:shadow-2xl">
-            <img
+            <Image
               src="/images/propolis.jpg"
               alt="Propolis"
-              className="w-28 h-28 object-contain mb-4 drop-shadow"
+              width={120}
+              height={120}
+              className="object-contain mb-4 drop-shadow"
               loading="lazy"
             />
             <h3 className="font-bold text-yellow-700 text-xl mb-2 font-serif">Propolis natural</h3>
@@ -89,10 +100,12 @@ export default function ProdusePage() {
 
           {/* Miere cu lăptișor de matcă */}
           <div className="bg-white/90 border border-yellow-100 rounded-2xl shadow-xl p-7 flex flex-col items-center group transition hover:shadow-2xl">
-            <img
+            <Image
               src="/images/laptisor-de-matca.jpg"
               alt="Miere cu lăptișor de matcă"
-              className="w-28 h-28 object-contain mb-4 drop-shadow"
+              width={120}
+              height={60}
+              className="object-contain mb-4 drop-shadow"
               loading="lazy"
             />
             <h3 className="font-bold text-yellow-700 text-xl mb-2 font-serif">Miere cu lăptișor de matcă</h3>
@@ -108,10 +121,12 @@ export default function ProdusePage() {
 
           {/* Fagure la borcan */}
           <div className="bg-white/90 border border-yellow-100 rounded-2xl shadow-xl p-7 flex flex-col items-center group transition hover:shadow-2xl">
-            <img
+            <Image
               src="/images/fagure-borcan.jpg"
               alt="Fagure la borcan"
-              className="w-28 h-28 object-contain mb-4 drop-shadow"
+              width={180}
+              height={180}
+              className="object-contain mb-4 drop-shadow"
               loading="lazy"
             />
             <h3 className="font-bold text-yellow-700 text-xl mb-2 font-serif">Fagure la borcan</h3>
@@ -132,12 +147,12 @@ export default function ProdusePage() {
           <p className="text-gray-700 mb-2">
             Produsele noastre sunt testate anual în laborator, ambalate igienic și livrate rapid. Pentru comenzi sau informații suplimentare, nu ezita să ne contactezi!
           </p>
-          <a
+          <Link
             href="/contact"
             className="inline-block mt-4 bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-md font-medium shadow transition"
           >
             Contactează-ne pentru detalii sau precomenzi
-          </a>
+          </Link>
         </div>
       </div>
     </section>

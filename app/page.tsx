@@ -6,7 +6,6 @@ import Gallery from "@/components/Gallery";
 import FAQ from "@/components/FAQ";
 import Newsletter from "@/components/Newsletter";
 
-// Transformăm paginile în secțiuni simple
 import DespreSection from "../app/despre/page";
 import ProduseSection from "../app/produse/page";
 import ContactSection from "../app/contact/page";

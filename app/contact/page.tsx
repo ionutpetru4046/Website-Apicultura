@@ -23,7 +23,7 @@ export default function ContactPage() {
   }
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-yellow-50 to-white flex flex-col-reverse lg:flex-row items-stretch">
+    <section className="min-h-screen bg-linear-to-br from-yellow-50 to-white flex flex-col-reverse lg:flex-row items-stretch">
       {/* LEFT */}
       <div className="w-full max-w-xl mx-auto p-6 sm:p-10 bg-white rounded-2xl shadow-xl lg:m-12 flex flex-col justify-center">
         <h1 className="text-4xl font-serif font-bold text-yellow-700 mb-4">

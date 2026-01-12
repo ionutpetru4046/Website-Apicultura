@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function DesprePage() {
   return (
     <section className="min-h-screen bg-gradient-to-br from-yellow-50 to-white flex items-center">
@@ -20,10 +23,12 @@ export default function DesprePage() {
         </div>
 
         <div className="bg-yellow-100 rounded-xl p-6 md:flex md:items-center gap-10 shadow-md mb-10">
-          <img
+          <Image
             src="/images/stupina15.jpg"
             alt="Apicultor"
-            className="w-36 h-36 object-contain mx-auto md:mx-0 mb-4 md:mb-0"
+            width={100}
+            height={180}
+            className="object-contain mx-auto md:mx-0 mb-4 md:mb-0"
           />
           <div>
             <h2 className="text-2xl font-serif font-bold mb-2 text-yellow-700">
@@ -51,10 +56,12 @@ export default function DesprePage() {
             </ul>
           </div>
           <div className="bg-white rounded-2xl shadow p-6 flex flex-col items-center">
-            <img
+            <Image
               src="/images/stupina8.jpg"
               alt="Fagure"
-              className="h-20 w-20 mb-4"
+              width={180}
+              height={80}
+              className="object-contain mb-4"
             />
             <h3 className="font-bold text-yellow-700 text-xl mb-2 font-serif">Apicultură modernă, cu rădăcini vechi</h3>
             <p className="text-gray-700">
@@ -70,12 +77,12 @@ export default function DesprePage() {
               Suntem deschiși la colaborări, prezentări sau vizite educative! Contactează-ne pentru orice întrebare sau curiozitate despre apicultură.
             </p>
           </div>
-          <a
+          <Link
             href="/contact"
             className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-md font-medium shadow transition"
           >
             Contactează-ne
-          </a>
+          </Link>
         </div>
       </div>
     </section>
