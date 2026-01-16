@@ -40,7 +40,7 @@ export default function Footer() {
             <h5 className="text-yellow-700 font-serif font-bold text-lg">Apicultură Naturală</h5>
             <p className="text-gray-700 mt-2 mb-1 max-w-sm">
               Miere 100% naturală, produse apicole pure, direct din stupina din Bihor.
-              Gust autentic. Calitate garantată.
+              Gust autentic. Calitate superioara.
             </p>
           </div>
           <p className="text-gray-500 mt-6 text-xs">
