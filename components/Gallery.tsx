@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 export default function Gallery() {
   // Lista imaginilor (poți pune până la 16)
@@ -9,25 +9,47 @@ export default function Gallery() {
   // Starea pentru modal
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
-  // Funcții pentru navigare
-  const showPrevImage = (e: React.MouseEvent) => {
-    e.stopPropagation();
+  // Funcții pentru navigare (mouse)
+  const showPrevImage = useCallback((e?: React.MouseEvent | KeyboardEvent) => {
+    if (e && 'stopPropagation' in e) e.stopPropagation();
     if (selectedIndex !== null && selectedIndex > 0) {
       setSelectedIndex(selectedIndex - 1);
     }
-  };
+  }, [selectedIndex]);
 
-  const showNextImage = (e: React.MouseEvent) => {
-    e.stopPropagation();
+  const showNextImage = useCallback((e?: React.MouseEvent | KeyboardEvent) => {
+    if (e && 'stopPropagation' in e) e.stopPropagation();
     if (selectedIndex !== null && selectedIndex < images.length - 1) {
       setSelectedIndex(selectedIndex + 1);
     }
-  };
+  }, [selectedIndex, images.length]);
 
-  const closeModal = (e: React.MouseEvent) => {
-    e.stopPropagation();
+  const closeModal = useCallback((e?: React.MouseEvent | KeyboardEvent) => {
+    if (e && 'stopPropagation' in e) e.stopPropagation();
     setSelectedIndex(null);
-  };
+  }, []);
+
+  // Keyboard navigation for modal
+  useEffect(() => {
+    if (selectedIndex === null) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "ArrowLeft") {
+        if (selectedIndex > 0) {
+          showPrevImage(e);
+        }
+      } else if (e.key === "ArrowRight") {
+        if (selectedIndex < images.length - 1) {
+          showNextImage(e);
+        }
+      } else if (e.key === "Escape") {
+        closeModal(e);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedIndex, showPrevImage, showNextImage, closeModal, images.length]);
 
   return (
     <section className="py-20">
