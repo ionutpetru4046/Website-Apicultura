@@ -36,18 +36,30 @@ export default function Gallery() {
           Galerie
         </h2>
 
+        {/* Uniform square thumbnail containers */}
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
           {images.map((src, i) => (
             <div
               key={i}
-              className="overflow-hidden rounded-xl cursor-pointer"
+              className="rounded-xl overflow-hidden cursor-pointer"
               onClick={() => setSelectedIndex(i)}
             >
-              <img
-                src={src}
-                alt={`Galerie ${i + 1}`}
-                className="w-full h-48 object-cover hover:scale-105 transition"
-              />
+              <div
+                className="w-full aspect-square bg-gray-100"
+                style={{ position: 'relative' }}
+              >
+                <img
+                  src={src}
+                  alt={`Galerie ${i + 1}`}
+                  className="absolute w-full h-full object-cover hover:scale-105 transition"
+                  style={{
+                    top: 0,
+                    left: 0,
+                    objectFit: 'cover',
+                    aspectRatio: '1/1',
+                  }}
+                />
+              </div>
             </div>
           ))}
         </div>
@@ -60,6 +72,7 @@ export default function Gallery() {
             <div
               className="bg-white rounded-xl overflow-hidden max-w-3xl w-full relative flex items-center"
               onClick={e => e.stopPropagation()}
+              style={{ maxHeight: '90vh' }}
             >
               {/* Left arrow */}
               <button
@@ -73,7 +86,18 @@ export default function Gallery() {
                 &#8592;
               </button>
               {/* Imaginea */}
-              <img src={images[selectedIndex]} alt={`Galerie ${selectedIndex + 1}`} className="w-full h-auto" />
+              <img
+                src={images[selectedIndex]}
+                alt={`Galerie ${selectedIndex + 1}`}
+                className="block max-h-[80vh] max-w-full mx-auto"
+                style={{
+                  objectFit: 'contain',
+                  width: 'auto',
+                  height: 'auto',
+                  maxHeight: '80vh',
+                  maxWidth: '100%',
+                }}
+              />
               {/* Right arrow */}
               <button
                 className={`absolute right-2 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 rounded-full p-2 shadow hover:bg-yellow-100 transition text-2xl font-bold ${selectedIndex === images.length - 1 ? "opacity-30 cursor-default" : ""}`}
