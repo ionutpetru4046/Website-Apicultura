@@ -23,23 +23,20 @@ export default function ContactPage() {
   }
 
   return (
-    <section className="min-h-screen bg-linear-to-br from-yellow-50 to-white flex flex-col-reverse lg:flex-row items-stretch">
-      <div className="flex flex-col lg:flex-row flex-1 w-full">
+    <section className="min-h-screen bg-gradient-to-br from-yellow-50 to-white flex items-center justify-center py-8">
+      <div className="w-full max-w-6xl mx-auto flex flex-col lg:flex-row gap-8">
         {/* LEFT */}
         <div
           className="
-            w-full lg:w-1/2
+            flex-1
             flex flex-col justify-center
-            max-w-full md:max-w-2xl
-            mx-auto md:mx-8 p-4 sm:p-8 md:p-10
             bg-white rounded-2xl shadow-xl
-            lg:my-12
-            h-full
+            p-4 sm:p-8 md:p-10
             min-h-[350px]
+            max-w-full
           "
           style={{
-            // For consistency, stretch height to match .flex-1 container on large screens
-            minHeight: '350px',
+            minWidth: 0, // Prevent flex growth from pushing out of container
           }}
         >
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-yellow-700 mb-3 sm:mb-4">
@@ -162,20 +159,18 @@ export default function ContactPage() {
 
         {/* RIGHT – MAP */}
         <div
-          className={`
-            w-full lg:w-1/2
+          className="
+            flex-1
             flex
             items-center
             justify-center
-            p-2 xs:p-4 lg:p-0
             min-h-[220px] sm:min-h-[350px] md:min-h-[400px]
-          `}
+          "
           style={{
-            // Make height auto/stretch to container, match left
-            minHeight: '350px',
+            minWidth: 0,
           }}
         >
-          <div className="w-full h-[220px] sm:h-[350px] md:h-[400px] lg:h-full rounded-2xl overflow-hidden shadow-2xl flex-1 min-h-[200px]">
+          <div className="w-full h-[220px] sm:h-[350px] md:h-[400px] lg:h-[500px] max-h-[500px] rounded-2xl overflow-hidden shadow-2xl flex-1 min-h-[200px]">
             <iframe
               title="Google Maps"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43466.99553773521!2d21.87034275682663!3d47.04650065304068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4746477081b7a34f%3A0x191c46db71fa7f5!2sBihor%2C%20Romania!5e0!3m2!1sro!2sro!4v1717924834000"
