@@ -5,31 +5,100 @@ export default function Footer() {
     <footer className="bg-yellow-50 border-t border-yellow-200 pt-10 pb-4">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row md:justify-between gap-10">
         {/* FOOTER LINKS */}
-        <nav className="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-6" aria-label="Footer navigation">
-          <div>
-            <h4 className="font-semibold text-yellow-800 mb-2 text-base">Navigare</h4>
-            <ul className="space-y-1 text-gray-700">
-              <li><Link href="/" className="hover:underline transition">Acasă</Link></li>
-              <li><Link href="/produse" className="hover:underline transition">Produse</Link></li>
-              <li><Link href="/despre" className="hover:underline transition">Despre</Link></li>
-              <li><Link href="/contact" className="hover:underline transition">Contact</Link></li>
+        <nav
+          className="
+            flex-1 
+            grid 
+            grid-cols-1 
+            md:grid-cols-3 
+            gap-8
+            max-w-full
+          "
+          aria-label="Footer navigation"
+        >
+          <div className="min-w-0">
+            <h4 className="font-semibold text-yellow-800 mb-2 text-base truncate">Navigare</h4>
+            <ul className="space-y-1 text-gray-700 break-words">
+              <li>
+                <Link href="/" className="hover:underline transition block truncate">
+                  Acasă
+                </Link>
+              </li>
+              <li>
+                <Link href="/produse" className="hover:underline transition block truncate">
+                  Produse
+                </Link>
+              </li>
+              <li>
+                <Link href="/despre" className="hover:underline transition block truncate">
+                  Despre
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:underline transition block truncate">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
-          <div>
-            <h4 className="font-semibold text-yellow-800 mb-2 text-base">Informații</h4>
-            <ul className="space-y-1 text-gray-700">
-              <li><a href="/produse#faq" className="hover:underline transition">Întrebări frecvente</a></li>
-              <li><a href="mailto:contact@apicultura.ro" className="hover:underline transition">Email: apiculturaNaturala@yahoo.com</a></li>
-              <li><a href="tel:07XXXXXXXX" className="hover:underline transition">Telefon: 07XXXXXXXX</a></li>
-              <li>Bihor, Alesd, Pestis</li>
+          <div className="min-w-0">
+            <h4 className="font-semibold text-yellow-800 mb-2 text-base truncate">Informații</h4>
+            <ul className="space-y-1 text-gray-700 break-words">
+              <li>
+                <a href="/produse#faq" className="hover:underline transition block truncate">
+                  Întrebări frecvente
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:contact@apicultura.ro"
+                  className="hover:underline transition block break-all"
+                >
+                  Email: apiculturaNaturala@yahoo.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:07XXXXXXXX"
+                  className="hover:underline transition block truncate"
+                >
+                  Telefon: 07XXXXXXXX
+                </a>
+              </li>
+              <li className="truncate">Bihor, Alesd, Pestis</li>
             </ul>
           </div>
-          <div>
-            <h4 className="font-semibold text-yellow-800 mb-2 text-base">Social</h4>
-            <ul className="space-y-1 text-gray-700" aria-label="Social media links">
-              <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="hover:underline transition">Facebook</a></li>
-              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="hover:underline transition">Instagram</a></li>
-              <li><a href="mailto:miereNaturala@yahoo.com" className="hover:underline transition">Trimite-ne un email</a></li>
+          <div className="min-w-0">
+            <h4 className="font-semibold text-yellow-800 mb-2 text-base truncate">Social</h4>
+            <ul className="space-y-1 text-gray-700 break-words" aria-label="Social media links">
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline transition block truncate"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline transition block truncate"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:miereNaturala@yahoo.com"
+                  className="hover:underline transition block break-all"
+                >
+                  Trimite-ne un email
+                </a>
+              </li>
             </ul>
           </div>
         </nav>
