@@ -31,7 +31,7 @@ export default function ProdusePage() {
               <li>Rămâne fluidă mult timp, nu cristalizează ușor</li>
             </ul>
             <span className="inline-block mt-auto bg-yellow-100 text-yellow-800 rounded px-4 py-1 text-sm font-medium">
-              In Stock si pe Comanda Online
+              Comanda Online
             </span>
           </div>
 
@@ -52,7 +52,7 @@ export default function ProdusePage() {
               <li>Aromă intensă, versatilă în bucătărie</li>
             </ul>
             <span className="inline-block mt-auto bg-yellow-100 text-yellow-800 rounded px-4 py-1 text-sm font-medium">
-              In Stock si pe Comanda Online
+              Comanda Online
             </span>
           </div>
 
@@ -73,7 +73,7 @@ export default function ProdusePage() {
               <li>Cules manual, uscat natural</li>
             </ul>
             <span className="inline-block mt-auto bg-yellow-100 text-yellow-800 rounded px-4 py-1 text-sm font-medium">
-              In Stock si pe Comanda Online
+              Comanda Online
             </span>
           </div>
 
@@ -94,7 +94,7 @@ export default function ProdusePage() {
               <li>Recoltat cu grijă, 100% natural, fără adaosuri</li>
             </ul>
             <span className="inline-block mt-auto bg-yellow-100 text-yellow-800 rounded px-4 py-1 text-sm font-medium">
-              In Stock si pe Comanda Online
+              Comanda Online
             </span>
           </div>
 
@@ -115,7 +115,7 @@ export default function ProdusePage() {
               <li>Produs exclusiv apicol, pentru întreaga familie</li>
             </ul>
             <span className="inline-block mt-auto bg-yellow-100 text-yellow-800 rounded px-4 py-1 text-sm font-medium">
-              In Stock si pe Comanda Online
+              Comanda Online
             </span>
           </div>
 
@@ -136,7 +136,7 @@ export default function ProdusePage() {
               <li>Garantat nerafinat, 100% direct din stupul familiei</li>
             </ul>
             <span className="inline-block mt-auto bg-yellow-100 text-yellow-800 rounded px-4 py-1 text-sm font-medium">
-              In Stock si pe Comanda Online
+              Comanda Online
             </span>
           </div>
         </div>
