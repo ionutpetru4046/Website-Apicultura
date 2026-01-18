@@ -23,7 +23,7 @@ export default function ContactPage() {
   }
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-yellow-50 to-white flex items-center justify-center py-8">
+    <section className="min-h-screen bg-linear-to-br from-yellow-50 to-white flex items-center justify-center py-8">
       <div className="w-full max-w-6xl mx-auto flex flex-col lg:flex-row gap-8">
         {/* LEFT */}
         <div
