@@ -2,10 +2,22 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // Prevent background scroll when menu is open
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [menuOpen]);
 
   const navLinks = [
     { href: "/", label: "Acasă" },
@@ -16,10 +28,13 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="w-full bg-white/90 backdrop-blur-xl shadow-sm fixed top-0 left-0 z-50 border-b border-gray-100">
-      <nav className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between relative">
+    <header className="w-full bg-white shadow-sm fixed top-0 left-0 z-50 border-b border-gray-100">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex items-center justify-between relative">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group text-2xl font-extrabold text-yellow-700 tracking-tight cursor-pointer z-40">
+        <Link
+          href="/"
+          className="flex items-center gap-3 group text-2xl font-extrabold text-yellow-700 tracking-tight cursor-pointer z-40"
+        >
           <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-yellow-100/70 border border-yellow-200 shadow group-hover:scale-105 transition-transform">
             <Image
               src="/images/littlebee.png"
@@ -36,8 +51,8 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex gap-4 lg:gap-8 text-base font-medium">
-          {navLinks.map(({ href, label }) => (
+        <ul className="hidden md:flex gap-2 lg:gap-8 text-base font-medium flex-1 justify-center">
+          {navLinks.filter(link => link.href !== "/contact").map(({ href, label }) => (
             <li key={href}>
               <Link
                 href={href}
@@ -50,7 +65,8 @@ export default function Navbar() {
         </ul>
 
         {/* Call to Action Button for Desktop */}
-        <div className="hidden md:block ml-6">
+        {/* Hide CTA on mobile and also when menuOpen is true */}
+        <div className={`ml-2 ${menuOpen ? "hidden" : "hidden md:block"}`}>
           <Link
             href="/contact"
             className="inline-flex items-center px-5 py-2 rounded-full bg-gradient-to-r from-yellow-400 to-amber-500 text-white font-semibold shadow hover:from-yellow-500 hover:to-amber-600 transition-colors focus:outline-none focus:ring-2 focus:ring-yellow-200"
@@ -96,7 +112,7 @@ export default function Navbar() {
         {/* Mobile Sliding Panel */}
         <nav
           className={`
-            fixed top-0 right-0 h-full w-4/5 max-w-xs bg-white/95 border-l border-yellow-100 shadow-xl flex flex-col z-50 
+            fixed top-0 right-0 h-full w-4/5 max-w-xs bg-white border-l border-yellow-100 shadow-xl flex flex-col z-50 
             transition-transform duration-300 md:hidden
             ${menuOpen ? "translate-x-0" : "translate-x-full"}
           `}
@@ -127,15 +143,7 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-          <div className="mt-auto mb-8 px-5 flex">
-            <Link
-              href="/contact"
-              className="flex-1 inline-flex items-center justify-center px-0 py-3 rounded-full bg-gradient-to-r from-yellow-400 to-amber-500 text-white font-semibold shadow hover:from-yellow-500 hover:to-amber-600 transition-colors focus:outline-none focus:ring-2 focus:ring-yellow-200"
-              onClick={() => setMenuOpen(false)}
-            >
-              Contactează-ne
-            </Link>
-          </div>
+          {/* No CTA Contactează-ne button in mobile menu */}
         </nav>
       </nav>
       {/* Add a subtle shadow below navbar */}
