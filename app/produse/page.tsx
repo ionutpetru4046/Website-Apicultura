@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ProdusePage() {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-yellow-50 to-white flex items-center">
+    <section className="min-h-screen bg-linear-to-br from-yellow-50 to-white flex items-center">
       <div className="max-w-7xl mx-auto px-6 py-16 w-full">
         <h1 className="text-4xl md:text-5xl font-serif leading-tight font-bold mb-4 text-yellow-700 text-center">
           Produsele noastre
