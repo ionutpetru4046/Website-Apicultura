@@ -5,7 +5,6 @@ import Testimonials from "@/components/Testimonials";
 import Gallery from "@/components/Gallery";
 import FAQ from "@/components/FAQ";
 import Newsletter from "@/components/Newsletter";
-
 import DespreSection from "../app/despre/page";
 import ProduseSection from "../app/produse/page";
 import ContactSection from "../app/contact/page";
