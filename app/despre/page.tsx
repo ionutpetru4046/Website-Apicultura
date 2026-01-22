@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function DesprePage() {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-yellow-50 via-white to-yellow-100 flex py-0 relative overflow-hidden">
+    <section className="min-h-screen bg-linear-to-br from-yellow-50 via-white to-yellow-100 flex py-0 relative overflow-hidden">
       {/* Decorative abstract honeycomb SVGs */}
       <svg
         className="absolute left-0 top-20 opacity-20 z-0"
@@ -114,7 +114,7 @@ export default function DesprePage() {
 
         {/* Valorile grid */}
         <div className="mb-14 w-full grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="rounded-2xl shadow-lg border border-yellow-100 bg-gradient-to-tr from-white via-yellow-50 to-white p-8">
+          <div className="rounded-2xl shadow-lg border border-yellow-100 bg-linear-to-tr from-white via-yellow-50 to-white p-8">
             <h3 className="font-bold text-yellow-700 text-2xl mb-5 font-serif flex items-center gap-2">
               <svg width={26} height={26} fill="none" viewBox="0 0 24 24"><path fill="#FDE68A" d="M12 2l2.09 6.26h6.6l-5.34 3.88 2.08 6.26L12 14.52l-5.33 3.88 2.08-6.26-5.34-3.88h6.59z"/></svg>
               Valorile noastre
@@ -127,7 +127,7 @@ export default function DesprePage() {
               <li className="flex items-center gap-2"><span className="p-1 rounded-full bg-yellow-100 text-yellow-600">✔</span> Comunitate și sustenabilitate</li>
             </ul>
           </div>
-          <div className="rounded-2xl shadow-lg border border-yellow-100 bg-gradient-to-tr from-yellow-50 via-white to-yellow-100 p-8 flex flex-col">
+          <div className="rounded-2xl shadow-lg border border-yellow-100 bg-linear-to-tr from-yellow-50 via-white to-yellow-100 p-8 flex flex-col">
             <h3 className="font-bold text-yellow-700 text-2xl mb-3 font-serif flex items-center gap-2">
               <svg width={26} height={26} fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#fde68a" /></svg>
               De ce să alegi mierea noastră?
@@ -180,7 +180,7 @@ export default function DesprePage() {
         </div>
 
         {/* Call to action */}
-        <div className="mt-10 flex flex-col md:flex-row items-center justify-between gap-8 bg-gradient-to-tr from-yellow-50 via-yellow-100 to-white rounded-2xl px-8 py-8 border border-yellow-200 shadow-lg blur-none animate-fadeIn">
+        <div className="mt-10 flex flex-col md:flex-row items-center justify-between gap-8 bg-linear-to-tr from-yellow-50 via-yellow-100 to-white rounded-2xl px-8 py-8 border border-yellow-200 shadow-lg blur-none animate-fadeIn">
           <div>
             <h4 className="text-xl font-serif font-bold text-yellow-800 mb-1">
               Vrei să ne cunoști mai bine sau să vizitezi stupina?
