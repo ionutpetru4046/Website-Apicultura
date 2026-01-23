@@ -145,7 +145,7 @@ export default function ProdusePage() {
               Contactează-ne pentru detalii sau precomenzi
             </Link>
           </div>
-          <div className="flex-shrink-0 mx-auto">
+          <div className="shrink-0 mx-auto">
             <Image
               src="/images/miere-poliflora.jpg"
               alt="Calitate Apicultura"
