@@ -29,7 +29,7 @@ export default function FAQ() {
   return (
     <section className="bg-yellow-50 py-20">
       <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl font-serif text-yellow-700 font-bold mb-12 text-center">
+        <h2 className="text-5xl font-serif text-yellow-700 font-bold mb-12 text-center">
           Întrebări frecvente
         </h2>
         <div className="space-y-6">
