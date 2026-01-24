@@ -50,7 +50,7 @@ export default function ContactPage() {
                 <div>
                   <div className="mb-1 font-medium">Telefon</div>
                   <a href="tel:07XXXXXXXX" className="text-yellow-700 hover:underline">
-                    07XXXXXXXX
+                    0748410558
                   </a>
                 </div>
               </div>
