@@ -59,10 +59,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="tel:07XXXXXXXX"
+                  href="tel:0748410558"
                   className="hover:underline transition block truncate"
                 >
-                  Telefon: 07XXXXXXXX
+                  Telefon: 0748410558
                 </a>
               </li>
               <li className="truncate">Bihor, Alesd, Pestis</li>
