@@ -24,7 +24,7 @@ export default function ContactPage() {
 
   return (
     <section
-      className="min-h-screen w-full bg-gradient-to-br from-yellow-50 to-white flex items-center justify-center py-8 px-2 md:px-6 relative overflow-hidden"
+      className="min-h-screen w-full bg-linear-to-br from-yellow-50 to-white flex items-center justify-center py-8 px-2 md:px-6 relative overflow-hidden"
       style={{
         backgroundImage:
           "radial-gradient(circle,rgba(253,224,71,0.13) 2px,transparent 2px), radial-gradient(circle,rgba(251,191,36,0.10) 1px,transparent 2px)",
@@ -106,7 +106,7 @@ export default function ContactPage() {
                   Livrare:
                 </p>
                 <span className="block mt-0.5 text-gray-700 text-sm">
-                  România &ndash; curier rapid (1–3 zile)
+                  Romania, Jud Bihor &ndash; curier rapid (1–3 zile)
                 </span>
               </div>
               <div>
