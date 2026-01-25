@@ -107,7 +107,7 @@ export default function Testimonials() {
       }}
     >
       <div className="max-w-4xl mx-auto px-6 relative z-10">
-        <h2 className="text-4xl md:text-5xl text-center font-serif text-yellow-700 font-bold mb-14 drop-shadow-sm">
+        <h2 className="text-5xl md:text-5xl text-center font-serif text-yellow-700 font-bold mb-14 drop-shadow-sm">
           Ce spun clienții noștri
         </h2>
 

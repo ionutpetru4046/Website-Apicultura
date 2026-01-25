@@ -2,7 +2,7 @@ export default function Benefits() {
   return (
     <section className="bg-yellow-50 py-20">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-yellow-700 text-center mb-12">
+        <h2 className="text-4xl font-bold text-yellow-700 text-center mb-12">
           De ce să alegi mierea noastră?
         </h2>
 
