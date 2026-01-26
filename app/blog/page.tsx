@@ -4,7 +4,7 @@ import { posts } from "../content/blog/posts";
 export default function BlogPage() {
   return (
     <section className="max-w-7xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-serif font-bold text-yellow-700 mb-12">
+      <h1 className="text-4xl text-center font-serif font-bold text-yellow-700 mb-12">
         Apicultura Blog
       </h1>
 
