@@ -18,7 +18,7 @@ export default function Footer() {
         >
           <div className="min-w-0">
             <h4 className="font-semibold text-yellow-800 mb-2 text-base truncate">Navigare</h4>
-            <ul className="space-y-1 text-gray-700 break-words">
+            <ul className="space-y-1 text-gray-700 wrap-break-word">
               <li>
                 <Link href="/" className="hover:underline transition block truncate">
                   Acasă
@@ -43,7 +43,7 @@ export default function Footer() {
           </div>
           <div className="min-w-0">
             <h4 className="font-semibold text-yellow-800 mb-2 text-base truncate">Informații</h4>
-            <ul className="space-y-1 text-gray-700 break-words">
+            <ul className="space-y-1 text-gray-700 wrap-break-word">
               <li>
                 <a href="/produse#faq" className="hover:underline transition block truncate">
                   Întrebări frecvente
@@ -70,7 +70,7 @@ export default function Footer() {
           </div>
           <div className="min-w-0">
             <h4 className="font-semibold text-yellow-800 mb-2 text-base truncate">Social</h4>
-            <ul className="space-y-1 text-gray-700 break-words" aria-label="Social media links">
+            <ul className="space-y-1 text-gray-700 wrap-break-word" aria-label="Social media links">
               <li>
                 <a
                   href="https://www.facebook.com/"

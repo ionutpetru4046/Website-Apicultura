@@ -45,7 +45,7 @@ export default function Navbar() {
               priority
             />
           </div>
-          <span className="bg-gradient-to-r from-yellow-600 via-yellow-400 to-amber-500 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-yellow-600 via-yellow-400 to-amber-500 bg-clip-text text-transparent">
             Apicultura<span className="font-black">Naturala</span>
           </span>
         </Link>
@@ -69,7 +69,7 @@ export default function Navbar() {
         <div className={`ml-2 ${menuOpen ? "hidden" : "hidden md:block"}`}>
           <Link
             href="/contact"
-            className="inline-flex items-center px-5 py-2 rounded-full bg-gradient-to-r from-yellow-400 to-amber-500 text-white font-semibold shadow hover:from-yellow-500 hover:to-amber-600 transition-colors focus:outline-none focus:ring-2 focus:ring-yellow-200"
+            className="inline-flex items-center px-5 py-2 rounded-full bg-linear-to-r from-yellow-400 to-amber-500 text-white font-semibold shadow hover:from-yellow-500 hover:to-amber-600 transition-colors focus:outline-none focus:ring-2 focus:ring-yellow-200"
           >
             Contactează-ne
           </Link>
