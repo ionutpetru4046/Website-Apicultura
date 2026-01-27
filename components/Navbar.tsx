@@ -147,7 +147,7 @@ export default function Navbar() {
         </nav>
       </nav>
       {/* Add a subtle shadow below navbar */}
-      <div className="absolute left-0 right-0 bottom-[-5px] h-2 bg-gradient-to-t from-yellow-100/40 to-transparent pointer-events-none" />
+      <div className="absolute left-0 right-0 bottom-[-5px] h-2 bg-linear-to-t from-yellow-100/40 to-transparent pointer-events-none" />
     </header>
   );
 }
