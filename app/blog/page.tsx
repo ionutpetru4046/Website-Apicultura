@@ -6,7 +6,7 @@ export default function BlogPage() {
   return (
     <section className="max-w-7xl mx-auto px-3 sm:px-6 py-8 min-h-screen">
       {/* Hero Header */}
-      <div className="relative flex flex-col items-center justify-center py-10 mb-14 bg-gradient-to-br from-yellow-50 via-yellow-100 to-amber-50 rounded-3xl shadow-sm overflow-hidden">
+      <div className="relative flex flex-col items-center justify-center py-10 mb-14 bg-linear-to-br from-yellow-50 via-yellow-100 to-amber-50 rounded-3xl shadow-sm overflow-hidden">
         {/* Honeycomb BG Accent (decorative SVG) */}
         <svg
           className="absolute -top-10 left-0 opacity-20 blur-sm w-40 h-40 pointer-events-none"
