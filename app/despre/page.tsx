@@ -76,7 +76,7 @@ export default function DesprePage() {
           <div className="md:col-span-1 flex flex-col justify-center">
             <div className="bg-white bg-opacity-90 rounded-2xl shadow-lg p-8 border border-yellow-100">
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Suntem o <span className="font-semibold text-yellow-700">stupină de familie</span> din Bihor, crescuți cu respect pentru albine și fascinanta lor lume. Grija, răbdarea și metodele tradiționale ne definesc: recoltăm blând doar când mierea e matură, menținând echilibrul naturii.
+                Suntem o <span className="font-semibold text-yellow-700">familie cu stupina</span> din Bihor, crescuți cu respect pentru albine și fascinanta lor lume. Grija, răbdarea și metodele tradiționale ne definesc: recoltăm blând doar când mierea e matură, menținând echilibrul naturii.
               </p>
               <p className="text-gray-700 leading-relaxed mb-3">
                 Sortimentul nostru include: <span className="font-semibold">miere polifloră</span>, <span className="font-semibold">salcâm</span>, <span className="font-semibold">tei</span>, <span className="font-semibold">floarea-soarelui</span> și <span className="font-semibold">propolis</span>, toate cu gust autentic.
