@@ -132,7 +132,7 @@ export default function ProdusePage() {
         <div className="mt-20 flex flex-col md:flex-row items-center md:justify-between gap-8 bg-white/80 border border-yellow-100 rounded-2xl p-8 shadow-xl transition-all">
           <div className="flex-1 text-center md:text-left">
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-yellow-700 mb-2">
-              Calitate garantată &amp; origine sigură
+              Calitate garantată &amp; origine autentica
             </h2>
             <p className="text-gray-700 text-base md:text-lg mb-2 max-w-xl">
               Fiecare produs apicol livrat de noi este testat anual în laborator, ambalat igienic și expediat rapid. Pentru mai multe informații sau precomenzi, ne poți contacta oricând.
