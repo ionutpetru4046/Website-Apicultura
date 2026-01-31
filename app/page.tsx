@@ -76,7 +76,7 @@ export default function Home() {
               100% natural
             </div>
             <div className="absolute bottom-5 right-5 bg-yellow-500/80 text-white px-3 py-1 rounded-full text-xs font-bold shadow-md tracking-wide">
-              Nouă recoltă
+              Recoltă Nouă 
             </div>
           </div>
         </div>
