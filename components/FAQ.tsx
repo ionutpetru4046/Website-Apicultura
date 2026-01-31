@@ -48,7 +48,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-yellow-50 via-yellow-100 to-white py-24 px-2">
+    <section className="relative bg-linear-to-br from-yellow-50 via-yellow-100 to-white py-24 px-2">
       <div className="absolute left-5 top-16 w-36 h-36 bg-yellow-200 rounded-full blur-2xl opacity-30 pointer-events-none" />
       <div className="absolute right-10 bottom-10 w-32 h-32 bg-yellow-100 rounded-full blur-2xl opacity-30 pointer-events-none" />
 

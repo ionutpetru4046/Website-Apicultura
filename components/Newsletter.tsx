@@ -13,7 +13,7 @@ export default function Newsletter() {
               placeholder="Email-ul tău"
               className="px-4 py-3 rounded-md flex-1 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500"
             />
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-md font-medium">
+            <button className="bg-yellow-500 cursor-pointer hover:bg-yellow-600 text-white px-6 py-3 rounded-md font-medium">
               Abonează-te
             </button>
           </form>
