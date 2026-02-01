@@ -121,7 +121,7 @@ export default function ProdusePage() {
               {/* Modern badge for new/featured */}
               {idx === 0 && (
                 <span className="absolute left-5 top-5 bg-yellow-400 text-xs text-white font-bold px-3 py-1 rounded-full shadow-yellow-300/40 shadow">
-                  Bestseller
+                  BestSeller
                 </span>
               )}
             </div>
