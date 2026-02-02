@@ -15,52 +15,85 @@ export default function Home() {
       {/* Hero */}
       <section className="relative isolate max-w-7xl mx-auto px-6 py-28 grid md:grid-cols-2 gap-16 items-center">
         {/* Decorative shapes/background */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute z-0 inset-0"
-        >
+        <div aria-hidden className="pointer-events-none absolute z-0 inset-0">
           <div className="hidden md:block absolute -top-12 -left-14 bg-yellow-200/70 rounded-full blur-3xl w-80 h-80 animate-pulse" />
           <div className="hidden md:block absolute bottom-0 right-0 bg-yellow-100/70 rounded-full blur-2xl w-56 h-56 animate-fadeIn" />
-          <svg className="absolute left-6 top-2 h-12 w-12 opacity-60 text-yellow-400" fill="none" viewBox="0 0 48 48">
-            <polygon points="24,4 28,18 44,18 31,28 36,42 24,33 12,42 17,28 4,18 20,18" fill="#fde68a" />
+          <svg
+            className="absolute left-6 top-2 h-12 w-12 opacity-60 text-yellow-400"
+            fill="none"
+            viewBox="0 0 48 48"
+          >
+            <polygon
+              points="24,4 28,18 44,18 31,28 36,42 24,33 12,42 17,28 4,18 20,18"
+              fill="#fde68a"
+            />
           </svg>
         </div>
         {/* Hero content */}
         <div className="relative z-10 flex flex-col gap-7">
           <span className="inline-flex items-center gap-2 px-3 py-1 bg-yellow-100 rounded-full w-max text-yellow-700 font-medium text-xs shadow-sm border border-yellow-200 tracking-widest uppercase mb-3">
-            <svg width={18} height={18} className="mr-1" fill="none" viewBox="0 0 24 24"><path d="M5.2,15.7c-1,1.1-2.9,2-2.9,2C3.6,19.5,6.7,21,8.6,22c-2.8-3.5-3.1-6-3.4-6.4z" fill="#eab308" /><circle cx="12" cy="10" r="6" fill="#fde68a"/></svg>
+            <svg
+              width={18}
+              height={18}
+              className="mr-1"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.2,15.7c-1,1.1-2.9,2-2.9,2C3.6,19.5,6.7,21,8.6,22c-2.8-3.5-3.1-6-3.4-6.4z"
+                fill="#eab308"
+              />
+              <circle cx="12" cy="10" r="6" fill="#fde68a" />
+            </svg>
             Miere locală, naturală
           </span>
           <h1 className="text-5xl md:text-6xl font-serif font-bold text-yellow-700 leading-tight drop-shadow-xl">
-            Miere naturală<br /> 
+            Miere naturală
+            <br />
             <span className="relative whitespace-nowrap">
               <span className="bg-yellow-200/70 absolute -bottom-1 left-0 w-full h-3 z-0 rounded-md"></span>
               <span className="relative z-10">direct de la apicultor</span>
             </span>
           </h1>
           <p className="text-xl text-gray-600/90 max-w-xl leading-relaxed font-medium">
-            Produse apicole 100% naturale, recoltate cu grijă din stupina noastră locală. Gust proaspăt și autentic de la natura din Bihor direct la tine acasă.
+            Produse apicole 100% naturale, recoltate cu grijă din stupina
+            noastră locală. Gust proaspăt și autentic de la natura din Bihor
+            direct la tine acasă.
           </p>
           <div className="flex flex-wrap gap-4 mt-2">
             <Link
               href="/produse"
               className="inline-flex items-center gap-2 bg-yellow-500 hover:bg-yellow-600 text-white px-7 py-3 rounded-full font-semibold shadow-lg shadow-yellow-300/30 hover:shadow-yellow-400/50 duration-200 transition focus:outline-none ring-2 ring-yellow-300"
             >
-              <svg width={22} height={22} fill="none" viewBox="0 0 24 24"><path d="M7 17l5-5 5 5" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              <svg width={22} height={22} fill="none" viewBox="0 0 24 24">
+                <path
+                  d="M7 17l5-5 5 5"
+                  stroke="#fff"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
               Vezi produsele
             </Link>
             <Link
               href="/contact"
               className="inline-flex items-center gap-2 border-2 border-yellow-400 hover:bg-yellow-100 text-yellow-700 px-7 py-3 rounded-full font-semibold transition focus:outline-none ring-2 ring-yellow-100"
             >
-              <svg width={20} height={20} fill="none" viewBox="0 0 24 24"><path d="M21 10V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v4M3 9l9 7 9-7" stroke="#eab308" strokeWidth="2"/></svg>
+              <svg width={20} height={20} fill="none" viewBox="0 0 24 24">
+                <path
+                  d="M21 10V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v4M3 9l9 7 9-7"
+                  stroke="#eab308"
+                  strokeWidth="2"
+                />
+              </svg>
               Contact
             </Link>
           </div>
         </div>
         {/* Hero image with modern card styling */}
-        <div className="relative z-10 w-full h-[26rem] flex items-center justify-center">
-          <div className="relative bg-yellow-100/60 rounded-3xl shadow-2xl shadow-yellow-200/50 border border-yellow-200 p-2 md:p-3 w-full h-full flex items-center justify-center before:content-[''] before:absolute before:inset-0 before:rounded-3xl before:bg-gradient-to-b before:from-yellow-50/90 before:to-transparent before:backdrop-blur-sm">
+        <div className="relative z-10 w-full h-104 flex items-center justify-center">
+          <div className="relative bg-yellow-100/60 rounded-3xl shadow-2xl shadow-yellow-200/50 border border-yellow-200 p-2 md:p-3 w-full h-full flex items-center justify-center before:content-[''] before:absolute before:inset-0 before:rounded-3xl before:bg-linear-to-b before:from-yellow-50/90 before:to-transparent before:backdrop-blur-sm">
             <Image
               src="/images/stupina1.jpg"
               alt="Stupina cu miere naturală"
@@ -72,11 +105,13 @@ export default function Home() {
             />
             {/* floating badge */}
             <div className="absolute top-5 left-5 bg-white/90 backdrop-blur-md shadow px-4 py-1 rounded-full flex items-center gap-2 text-yellow-600 text-xs font-medium">
-              <svg fill="#eab308" height={16} width={16} viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" /></svg>
+              <svg fill="#eab308" height={16} width={16} viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="12" />
+              </svg>
               100% natural
             </div>
             <div className="absolute bottom-5 right-5 bg-yellow-500/80 text-white px-3 py-1 rounded-full text-xs font-bold shadow-md tracking-wide">
-              Recoltă Nouă 
+              Recoltă Nouă
             </div>
           </div>
         </div>

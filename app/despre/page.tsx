@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function DesprePage() {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-yellow-50 via-white to-yellow-100 flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen bg-linear-to-br from-yellow-50 via-white to-yellow-100 flex items-center justify-center relative overflow-hidden">
       {/* Modern honeycomb SVG decorations */}
       <svg
         className="absolute left-[-80px] top-24 w-64 h-64 opacity-10 z-0 animate-spin-slow"
@@ -29,7 +29,7 @@ export default function DesprePage() {
       <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-10 py-20">
         {/* Header */}
         <header className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-yellow-100 via-white to-yellow-100 rounded-full border border-yellow-200 shadow-lg mb-6 animate-fadeIn">
+          <div className="inline-flex items-center gap-2 px-6 py-3 bg-linear-to-r from-yellow-100 via-white to-yellow-100 rounded-full border border-yellow-200 shadow-lg mb-6 animate-fadeIn">
             <svg width={24} height={24} fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#fde68a"/><path d="M7,15c-0.8,1-2.5,2.1-2.5,2.1C5.8,20,9,22,11,23c-2.3-3.2-2.7-5.4-2.9-5.6Z" fill="#eab308"/></svg>
             <span className="uppercase tracking-widest font-semibold text-xs text-yellow-800">Tradiție & Calitate</span>
           </div>
@@ -110,7 +110,7 @@ export default function DesprePage() {
 
         {/* Our values and Benefits - Modern Cards */}
         <div className="mb-20 w-full grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="rounded-3xl shadow-lg border border-yellow-100 bg-gradient-to-tr from-white via-yellow-50 to-white p-10 flex flex-col justify-start">
+          <div className="rounded-3xl shadow-lg border border-yellow-100 bg-linear-to-tr from-white via-yellow-50 to-white p-10 flex flex-col justify-start">
             <h3 className="font-bold text-yellow-700 text-2xl mb-6 font-serif flex items-center gap-2">
               <svg width={28} height={28} fill="none" viewBox="0 0 24 24"><path fill="#FDE68A" d="M12 2l2.09 6.26h6.6l-5.34 3.88 2.08 6.26L12 14.52l-5.33 3.88 2.08-6.26-5.34-3.88h6.59z"/></svg>
               Valorile noastre
