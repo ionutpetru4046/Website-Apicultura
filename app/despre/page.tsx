@@ -69,7 +69,7 @@ export default function DesprePage() {
           </div>
 
           {/* Center Card */}
-          <div className="flex flex-col justify-center items-center bg-opacity-90 border shadow-lg rounded-3xl p-8 bg-gradient-to-tr from-white via-yellow-50 to-yellow-100 border-yellow-100">
+          <div className="flex flex-col justify-center items-center bg-opacity-90 border shadow-lg rounded-3xl p-8 bg-linear-to-tr from-white via-yellow-50 to-yellow-100 border-yellow-100">
             <p className="text-lg text-gray-700 leading-relaxed mb-5 text-center">
               Suntem o <span className="font-semibold text-yellow-700">familie cu stupina</span> din Bihor, crescuți cu respect pentru albine și fascinanta lor lume. Grija, răbdarea și metodele tradiționale ne definesc: recoltăm blând doar când mierea e matură, menținând echilibrul naturii.
             </p>
@@ -123,7 +123,7 @@ export default function DesprePage() {
               <li className="flex items-center gap-3"><span className="p-2 rounded-full bg-yellow-100 text-yellow-700 text-lg">✓</span> Comunitate și sustenabilitate</li>
             </ul>
           </div>
-          <div className="rounded-3xl shadow-lg border border-yellow-100 bg-gradient-to-tr from-yellow-50 via-white to-yellow-100 p-10 flex flex-col justify-start">
+          <div className="rounded-3xl shadow-lg border border-yellow-100 bg-linear-to-tr from-yellow-50 via-white to-yellow-100 p-10 flex flex-col justify-start">
             <h3 className="font-bold text-yellow-700 text-2xl mb-6 font-serif flex items-center gap-2">
               <svg width={28} height={28} fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#fde68a" /></svg>
               De ce să alegi mierea noastră?
@@ -174,11 +174,11 @@ export default function DesprePage() {
             </li>
           </ol>
           {/* Animated vertical line */}
-          <div className="absolute left-2.5 top-6 bottom-6 w-2 bg-gradient-to-b from-yellow-200 via-yellow-100 to-transparent rounded-full pointer-events-none"></div>
+          <div className="absolute left-2.5 top-6 bottom-6 w-2 bg-linear-to-b from-yellow-200 via-yellow-100 to-transparent rounded-full pointer-events-none"></div>
         </section>
 
         {/* CTA - Stylish section */}
-        <div className="mt-10 flex flex-col md:flex-row items-center justify-between gap-14 bg-gradient-to-tr from-yellow-100 via-white to-yellow-50 rounded-3xl px-10 py-12 border border-yellow-200 shadow-2xl animate-fadeIn">
+        <div className="mt-10 flex flex-col md:flex-row items-center justify-between gap-14 bg-linear-to-tr from-yellow-100 via-white to-yellow-50 rounded-3xl px-10 py-12 border border-yellow-200 shadow-2xl animate-fadeIn">
           <div className="flex-1">
             <h4 className="text-2xl md:text-3xl font-serif font-bold text-yellow-900 mb-3">
               Vrei să ne cunoști mai bine sau să vizitezi stupina?
