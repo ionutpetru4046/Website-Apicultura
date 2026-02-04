@@ -30,22 +30,32 @@ export default function Navbar() {
   return (
     <header className="w-full bg-white shadow-sm fixed top-0 left-0 z-50 border-b border-gray-100">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex items-center justify-between relative">
-        {/* Logo */}
+        {/* Logo - Bigger and Responsive */}
         <Link
           href="/"
-          className="flex items-center gap-3 group text-2xl font-extrabold text-yellow-700 tracking-tight cursor-pointer z-40"
+          className="flex items-center gap-3 group text-2xl lg:text-3xl font-extrabold text-yellow-700 tracking-tight cursor-pointer z-40"
         >
-          <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-yellow-100/70 border border-yellow-200 shadow group-hover:scale-105 transition-transform">
+          <div
+            className="
+              flex items-center justify-center rounded-xl bg-yellow-100/70 border border-yellow-200 shadow group-hover:scale-105 transition-transform
+              w-14 h-14 
+              sm:w-16 sm:h-16 
+              lg:w-20 lg:h-20
+              min-w-12 min-h-12
+            "
+            style={{ minWidth: '3rem', minHeight: '3rem' }}
+          >
             <Image
               src="/images/littlebee.png"
               alt="Apicultură Naturală Logo"
-              width={38}
-              height={38}
-              className="object-contain"
+              sizes="(max-width: 640px) 52px, (max-width: 1024px) 64px, 82px"
+              width={82} // Big fallback for desktop
+              height={82}
+              className="object-contain w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16"
               priority
             />
           </div>
-          <span className="bg-linear-to-r from-yellow-600 via-yellow-400 to-amber-500 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-yellow-600 via-yellow-400 to-amber-500 bg-clip-text text-transparent whitespace-nowrap">
             Apicultura<span className="font-black">Naturala</span>
           </span>
         </Link>
@@ -123,9 +133,10 @@ export default function Navbar() {
             <Image
               src="/images/littlebee.png"
               alt="Apicultură Naturală Logo"
-              width={48}
-              height={48}
-              className="object-contain"
+              width={56}
+              height={56}
+              sizes="56px"
+              className="object-contain w-14 h-14"
               priority
             />
             <span className="text-xl font-extrabold text-yellow-700">ApiculturaNaturala</span>
