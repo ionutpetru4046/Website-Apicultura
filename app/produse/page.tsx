@@ -72,7 +72,7 @@ const products = [
 
 export default function ProdusePage() {
   return (
-    <section className="min-h-screen bg-linear-to-br from-yellow-50 to-white flex flex-col justify-start items-center pt-4 pb-10 relative">
+    <section className="min-h-screen bg-linear-to-br from-yellow-50 to-white mt-12 flex flex-col justify-start items-center pt-4 pb-10 relative">
       {/* BG modern accent */}
       <span className="hidden md:block absolute left-0 top-0 w-[340px] h-[340px] rounded-full bg-yellow-100 blur-[70px] opacity-60 -z-10" />
       <span className="hidden md:block absolute right-0 bottom-0 w-[260px] h-[260px] rounded-full bg-yellow-200 blur-[80px] opacity-50 -z-10" />

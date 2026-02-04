@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function DesprePage() {
   return (
-    <section className="min-h-screen bg-linear-to-br from-yellow-50 via-white to-yellow-100 flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen bg-linear-to-br from-yellow-50 via-white to-yellow-100 flex items-center mt-12 justify-center relative overflow-hidden">
       {/* Modern honeycomb SVG decorations */}
       <svg
         className="absolute left-[-80px] top-24 w-64 h-64 opacity-10 z-0 animate-spin-slow"

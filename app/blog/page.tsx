@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function BlogPage() {
   return (
-    <section className="max-w-7xl mx-auto px-3 sm:px-6 py-8 min-h-screen">
+    <section className="max-w-7xl mx-auto px-3 sm:px-6 mt-12 py-8 min-h-screen">
       {/* Hero Header */}
       <div className="relative flex flex-col items-center justify-center py-10 mb-14 bg-linear-to-br from-yellow-50 via-yellow-100 to-amber-50 rounded-3xl shadow-sm overflow-hidden">
         {/* Honeycomb BG Accent (decorative SVG) */}
