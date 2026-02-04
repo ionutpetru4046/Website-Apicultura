@@ -103,7 +103,7 @@ export default function DesprePage() {
               Folosim tehnologie pentru monitorizare și grijă, păstrând naturalețea mierii pure.
             </p>
             <span className="text-yellow-600 bg-yellow-50 rounded-full px-5 py-1 mt-3 font-semibold border border-yellow-100 shadow-sm text-sm">
-              Tradiție cu inovație
+              Tradiție si inovație
             </span>
           </div>
         </div>
