@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const benefits = [
   {
     title: "100% Naturală",
@@ -72,7 +70,7 @@ export default function Benefits() {
                 group relative flex flex-col items-center text-center transition-all duration-250 
                 rounded-3xl shadow-[0_2px_8px_0_rgba(251,191,36,0.07)] overflow-hidden 
                 border border-yellow-100 
-                bg-gradient-to-br ${ben.accent}
+                bg-linear-to-br ${ben.accent}
                 px-7 py-10
                 hover:shadow-2xl hover:border-yellow-300
                 hover:-translate-y-1
@@ -84,7 +82,7 @@ export default function Benefits() {
               <h3 className="text-xl md:text-2xl font-semibold mb-2 text-yellow-800">{ben.title}</h3>
               <p className="text-base md:text-lg text-gray-700/90 font-medium">{ben.desc}</p>
               {/* animated gradient accent */}
-              <span className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-yellow-300 via-yellow-200 to-yellow-300 opacity-60 group-hover:opacity-100 transition-all" />
+              <span className="absolute inset-x-0 bottom-0 h-1 bg-linear-to-r from-yellow-300 via-yellow-200 to-yellow-300 opacity-60 group-hover:opacity-100 transition-all" />
             </div>
           ))}
         </div>
