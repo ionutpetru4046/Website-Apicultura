@@ -115,7 +115,7 @@ export default function ContactPage() {
                   Program:
                 </p>
                 <div className="mt-0.5 ml-0.5 text-sm">
-                  <p>Luni – Sâmbătă: <span className="font-medium text-gray-800">09:00 – 20:00</span></p>
+                  <p>Luni – Sâmbătă: <span className="font-medium text-gray-800">10:00 – 20:00</span></p>
                   <p className="text-gray-500">Duminică: <span className="font-normal">Închis</span></p>
                 </div>
               </div>
