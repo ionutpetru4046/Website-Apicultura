@@ -92,7 +92,7 @@ export default function ContactPage() {
                   <div className="mb-1 font-medium">Adresă</div>
                   <span className="text-gray-700">
                     Județul Bihor,<br />
-                    Loc. Peștiș, Oraș Aleșd,
+                    Oraș Aleșd, Localitatea Pestis,
                     <br />
                     Str. Valea Morii nr. 384
                   </span>
