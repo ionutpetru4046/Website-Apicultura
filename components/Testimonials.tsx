@@ -36,7 +36,7 @@ export default function Testimonials() {
     {
       name: "Maria Popescu",
       text: "Mierea este delicioasă și naturală! Gust autentic, a devenit preferata familiei.",
-      location: "București",
+      location: "Oradea",
       avatar: "/images/testimonials/maria.jpg",
       stars: 5,
     },
