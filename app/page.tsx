@@ -11,11 +11,11 @@ import ContactSection from "../app/contact/page";
 
 export default function Home() {
   return (
-    <main className="bg-yellow-50">
+    <main className="bg-yellow-50 overflow-x-hidden">
       {/* Hero */}
       <section className="relative isolate max-w-7xl mx-auto px-6 py-28 grid md:grid-cols-2 gap-16 items-center">
         {/* Decorative shapes/background */}
-        <div aria-hidden className="pointer-events-none absolute z-0 inset-0">
+        <div aria-hidden className="pointer-events-none absolute z-0 inset-0 overflow-hidden">
           <div className="hidden md:block absolute -top-12 -left-14 bg-yellow-200/70 rounded-full blur-3xl w-80 h-80 animate-pulse" />
           <div className="hidden md:block absolute bottom-0 right-0 bg-yellow-100/70 rounded-full blur-2xl w-56 h-56 animate-fadeIn" />
           <svg
@@ -92,8 +92,8 @@ export default function Home() {
           </div>
         </div>
         {/* Hero image with modern card styling */}
-        <div className="relative z-10 w-full h-104 flex items-center justify-center">
-          <div className="relative bg-yellow-100/60 rounded-3xl shadow-2xl shadow-yellow-200/50 border border-yellow-200 p-2 md:p-3 w-full h-full flex items-center justify-center before:content-[''] before:absolute before:inset-0 before:rounded-3xl before:bg-linear-to-b before:from-yellow-50/90 before:to-transparent before:backdrop-blur-sm">
+        <div className="relative z-10 w-full min-h-[320px] flex items-center justify-center">
+          <div className="relative bg-yellow-100/60 rounded-3xl shadow-2xl shadow-yellow-200/50 border border-yellow-200 p-2 md:p-3 w-full h-full flex items-center justify-center before:content-[''] before:absolute before:inset-0 before:rounded-3xl before:bg-gradient-to-b before:from-yellow-50/90 before:to-transparent before:backdrop-blur-sm">
             <Image
               src="/images/stupina1.jpg"
               alt="Stupina cu miere naturală"
@@ -102,6 +102,8 @@ export default function Home() {
               className="object-cover w-full h-full rounded-2xl relative z-10 transition-transform duration-300 hover:scale-105"
               priority
               sizes="(max-width: 768px) 100vw, 50vw"
+              // Ensure image cannot bleed out of container
+              style={{ maxWidth: "100%", maxHeight: "400px" }}
             />
             {/* floating badge */}
             <div className="absolute top-5 left-5 bg-white/90 backdrop-blur-md shadow px-4 py-1 rounded-full flex items-center gap-2 text-yellow-600 text-xs font-medium">
