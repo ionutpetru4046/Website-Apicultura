@@ -93,7 +93,7 @@ export default function Home() {
         </div>
         {/* Hero image with modern card styling */}
         <div className="relative z-10 w-full min-h-[320px] flex items-center justify-center">
-          <div className="relative bg-yellow-100/60 rounded-3xl shadow-2xl shadow-yellow-200/50 border border-yellow-200 p-2 md:p-3 w-full h-full flex items-center justify-center before:content-[''] before:absolute before:inset-0 before:rounded-3xl before:bg-gradient-to-b before:from-yellow-50/90 before:to-transparent before:backdrop-blur-sm">
+          <div className="relative bg-yellow-100/60 rounded-3xl shadow-2xl shadow-yellow-200/50 border border-yellow-200 p-2 md:p-3 w-full h-full flex items-center justify-center before:content-[''] before:absolute before:inset-0 before:rounded-3xl before:bg-linear-to-b before:from-yellow-50/90 before:to-transparent before:backdrop-blur-sm">
             <Image
               src="/images/stupina1.jpg"
               alt="Stupina cu miere naturală"
