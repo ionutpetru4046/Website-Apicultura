@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Inter, Playfair_Display } from "next/font/google";
 
+// Initialize font variables with Next.js font loader
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -15,6 +16,7 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
+// Export metadata for Next.js (v13+ app dir)
 export const metadata = {
   title: "Apicultură Naturală",
   description: "Miere naturală 100% direct de la apicultor",
@@ -43,6 +45,7 @@ export const metadata = {
   },
 };
 
+// Main layout for the App Directory (Next.js v13+)
 export default function RootLayout({
   children,
 }: {
@@ -51,8 +54,11 @@ export default function RootLayout({
   return (
     <html lang="ro" className={`${inter.variable} ${playfair.variable}`}>
       <body className="bg-[#FFFDF8] text-[#2B2B2B] font-sans">
+        {/* Navbar */}
         <Navbar />
+        {/* Main Content */}
         {children}
+        {/* Footer */}
         <Footer />
       </body>
     </html>
