@@ -72,10 +72,10 @@ const products = [
 
 export default function ProdusePage() {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-yellow-50 via-white to-yellow-100 flex flex-col items-center pt-16 pb-24">
+    <section className="relative min-h-screen bg-linear-to-br from-yellow-50 via-white to-yellow-100 flex flex-col items-center pt-16 pb-24">
       {/* Animated background honeycombs */}
       <svg
-        className="absolute left-0 top-[5rem] w-80 h-80 opacity-10 z-0 animate-spin-slower pointer-events-none hidden md:block"
+        className="absolute left-0 top-20 w-80 h-80 opacity-10 z-0 animate-spin-slower pointer-events-none hidden md:block"
         viewBox="0 0 180 180"
         fill="none"
       >
@@ -144,7 +144,7 @@ export default function ProdusePage() {
               </button>
               {/* Featured badge */}
               {idx === 0 && (
-                <span className="absolute left-4 top-4 bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-400 text-xs text-white font-bold px-4 py-1 rounded-full shadow-yellow-200/70 shadow-lg tracking-wide z-10 animate-fadeBadge">
+                <span className="absolute left-4 top-4 bg-linear-to-br from-yellow-400 via-yellow-500 to-yellow-400 text-xs text-white font-bold px-4 py-1 rounded-full shadow-yellow-200/70 shadow-lg tracking-wide z-10 animate-fadeBadge">
                   BestSeller
                 </span>
               )}
