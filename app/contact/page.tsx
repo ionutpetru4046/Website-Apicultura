@@ -91,7 +91,7 @@ export default function ContactPage() {
                 <div>
                   <div className="mb-1 font-medium">Adresă</div>
                   <span className="text-gray-700">
-                    Județul Bihor,<br />
+                    Romania Județul Bihor,<br />
                     Oraș Aleșd, Localitatea Pestis,
                     <br />
                     Str. Valea Morii nr. 384
