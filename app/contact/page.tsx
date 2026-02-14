@@ -193,7 +193,7 @@ export default function ContactPage() {
               </div>
             )}
             <div className="mt-7 border-t pt-5 text-xs text-gray-400 flex flex-col items-center">
-              <span>Protejăm datele tale personale – totul se transmite securizat.</span>
+              <span>Protejăm datele tale personale – totul este securizat.</span>
             </div>
           </div>
         </div>
