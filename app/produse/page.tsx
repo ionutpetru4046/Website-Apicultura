@@ -104,7 +104,7 @@ export default function ProdusePage() {
           <h1 className="relative text-4xl md:text-7xl font-serif font-extrabold text-yellow-700 tracking-tight leading-tight drop-shadow-2xl">
             Produsele <span className="relative inline-block">
               <span className="absolute left-0 bottom-1 w-full h-7 bg-yellow-200/80 rounded-lg blur-sm -z-10 animate-expandX"></span>
-              <span className="relative z-20 px-2">noastre</span>
+              <span className="relative z-20 px-2">Noastre</span>
             </span>
           </h1>
           <p className="text-center text-lg md:text-2xl max-w-2xl mx-auto mb-6 text-gray-800/90 font-medium bg-white/70 rounded-lg px-6 py-4 shadow animate-fadeIn delay-150">
