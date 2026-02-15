@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function DesprePage() {
   return (
     // Removed 'overflow-x-hidden' to fix scroll effect
-    <section className="relative min-h-screen bg-gradient-to-br from-yellow-50 via-white to-yellow-100 flex items-center mt-16 pb-24">
+    <section className="relative min-h-screen bg-linear-to-br from-yellow-50 via-white to-yellow-100 flex items-center mt-16 pb-24">
       {/* Decorative SVG honeycomb patterns */}
       <svg
         className="absolute left-0 top-24 w-64 h-64 opacity-10 z-0 animate-spin-slower pointer-events-none hidden md:block"
