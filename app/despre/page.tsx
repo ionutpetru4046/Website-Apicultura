@@ -55,7 +55,7 @@ export default function DesprePage() {
         {/* Feature Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
           {/* Left Card */}
-          <div className="relative bg-gradient-to-br from-white via-yellow-50 to-white rounded-2xl shadow-md border border-yellow-100 group hover:-translate-y-2 transition-transform p-7 flex flex-col items-center text-center">
+          <div className="relative bg-linear-to-br from-white via-yellow-50 to-white rounded-2xl shadow-md border border-yellow-100 group hover:-translate-y-2 transition-transform p-7 flex flex-col items-center text-center">
             <span className="absolute -top-8 left-6 w-28 h-28 bg-yellow-100 rounded-full blur-2xl opacity-40 group-hover:scale-105 transition-transform"></span>
             <Image
               src="/images/stupina15.jpg"
