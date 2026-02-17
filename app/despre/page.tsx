@@ -113,7 +113,7 @@ export default function DesprePage() {
 
         {/* Values and Benefits - Modern Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-          <div className="rounded-2xl shadow-md border border-yellow-100 bg-gradient-to-tr from-white via-yellow-50 to-white p-8 flex flex-col gap-6 min-h-[320px]">
+          <div className="rounded-2xl shadow-md border border-yellow-100 bg-linear-to-tr from-white via-yellow-50 to-white p-8 flex flex-col gap-6 min-h-[320px]">
             <div className="flex items-center gap-2">
               <svg width={28} height={28} fill="none" viewBox="0 0 24 24"><path fill="#FDE68A" d="M12 2l2.09 6.26h6.6l-5.34 3.88 2.08 6.26L12 14.52l-5.33 3.88 2.08-6.26-5.34-3.88h6.59z"/></svg>
               <h3 className="font-bold text-yellow-800 text-xl font-serif">Valorile noastre</h3>
@@ -133,7 +133,7 @@ export default function DesprePage() {
               ))}
             </ul>
           </div>
-          <div className="rounded-2xl shadow-md border border-yellow-100 bg-gradient-to-tr from-yellow-50 via-white to-yellow-100 p-8 flex flex-col gap-6 min-h-[320px]">
+          <div className="rounded-2xl shadow-md border border-yellow-100 bg-linear-to-tr from-yellow-50 via-white to-yellow-100 p-8 flex flex-col gap-6 min-h-[320px]">
             <div className="flex items-center gap-2">
               <svg width={28} height={28} fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#fde68a" /></svg>
               <h3 className="font-bold text-yellow-800 text-xl font-serif">De ce să alegi mierea noastră?</h3>
