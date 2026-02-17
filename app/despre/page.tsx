@@ -74,7 +74,7 @@ export default function DesprePage() {
           </div>
 
           {/* Center Card */}
-          <div className="relative bg-gradient-to-bl from-yellow-50 via-white to-yellow-100 border border-yellow-100 shadow-md rounded-2xl p-7 flex flex-col items-center justify-between gap-6">
+          <div className="relative bg-linear-to-bl from-yellow-50 via-white to-yellow-100 border border-yellow-100 shadow-md rounded-2xl p-7 flex flex-col items-center justify-between gap-6">
             <p className="text-lg text-gray-800 leading-relaxed mb-2 text-center">
               Suntem o <span className="font-semibold text-yellow-700">familie cu stupina</span> din Bihor, crescuți cu respect pentru albine și fascinanta lor lume. Grija, răbdarea și metodele tradiționale ne definesc: recoltăm blând doar când mierea e matură, menținând echilibrul naturii.
             </p>
@@ -92,7 +92,7 @@ export default function DesprePage() {
           </div>
 
           {/* Right Card */}
-          <div className="relative bg-gradient-to-br from-white via-yellow-100 to-yellow-50 rounded-2xl shadow-md border border-yellow-100 group hover:-translate-y-2 transition-transform p-7 flex flex-col items-center text-center">
+          <div className="relative bg-linear-to-br from-white via-yellow-100 to-yellow-50 rounded-2xl shadow-md border border-yellow-100 group hover:-translate-y-2 transition-transform p-7 flex flex-col items-center text-center">
             <span className="absolute -top-8 right-4 w-24 h-24 bg-yellow-200 rounded-full blur-2xl opacity-40 group-hover:scale-105 transition-transform"></span>
             <Image
               src="/images/stupina8.jpg"
