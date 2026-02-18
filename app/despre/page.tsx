@@ -192,7 +192,7 @@ export default function DesprePage() {
         </section>
 
         {/* Call-to-Action Section */}
-        <div className="mt-10 flex flex-col md:flex-row items-center justify-between gap-10 bg-gradient-to-tr from-yellow-100 via-white to-yellow-50 rounded-3xl px-8 py-10 border border-yellow-200 shadow-xl animate-fadeIn">
+        <div className="mt-10 flex flex-col md:flex-row items-center justify-between gap-10 bg-linear-to-tr from-yellow-100 via-white to-yellow-50 rounded-3xl px-8 py-10 border border-yellow-200 shadow-xl animate-fadeIn">
           <div className="flex-1 flex flex-col gap-5">
             <h4 className="text-2xl md:text-3xl font-serif font-extrabold text-yellow-900 mb-1">
               Vrei să ne cunoști mai bine sau să vizitezi stupina?
