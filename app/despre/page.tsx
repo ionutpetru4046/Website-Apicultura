@@ -39,7 +39,7 @@ export default function DesprePage() {
             </svg>
             <span className="uppercase tracking-wider font-bold text-xs text-yellow-900">Tradiție & Calitate</span>
           </div>
-          <h1 className="relative font-serif text-5xl md:text-7xl font-extrabold text-yellow-700 drop-shadow-2xl leading-tight">
+          <h1 className="relative font-serif sm:text-5xl text-3xl md:text-7xl font-extrabold text-yellow-700 drop-shadow-2xl leading-tight">
             Despre <span className="relative inline-block">
               <span className="absolute left-0 bottom-1 w-full h-6 bg-yellow-200/70 rounded-md blur-[2px] -z-10 animate-expandX"></span>
               <span className="relative z-20 px-2">noi</span>
