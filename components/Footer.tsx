@@ -16,7 +16,7 @@ export default function Footer() {
                 width={110}
                 height={50}
                 priority={false}
-                className="object-contain h-12 w-auto"
+                className="object-contain h-12 w-auto rounded-e-4xl"
               />
             </Link>
           </div>
