@@ -13,9 +13,20 @@ export default function Home() {
   return (
     <main className="bg-yellow-50 overflow-x-hidden">
       {/* Hero */}
-      <section className="relative isolate max-w-7xl mx-auto px-3 sm:px-6 py-16 xs:py-20 sm:py-24 md:py-28 flex flex-col md:grid md:grid-cols-2 gap-10 sm:gap-14 md:gap-16 items-center">
+      <section
+        className="
+          relative isolate max-w-7xl mx-auto px-3 sm:px-6 
+          py-14 xs:py-20 sm:py-24 md:py-28 
+          flex flex-col-reverse md:flex-row 
+          gap-12 sm:gap-16 md:gap-20 items-center
+          landscape:md:flex-col landscape:md:gap-10
+        "
+      >
         {/* Decorative shapes/background */}
-        <div aria-hidden className="pointer-events-none absolute z-0 inset-0 overflow-hidden">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute z-0 inset-0 overflow-hidden"
+        >
           <div className="hidden md:block absolute -top-12 -left-14 bg-yellow-200/70 rounded-full blur-3xl w-80 h-80 animate-pulse" />
           <div className="hidden md:block absolute bottom-0 right-0 bg-yellow-100/70 rounded-full blur-2xl w-56 h-56 animate-fadeIn" />
           <svg
@@ -29,8 +40,59 @@ export default function Home() {
             />
           </svg>
         </div>
+        {/* Hero image with modern card styling */}
+        <div
+          className="
+            relative z-10 flex items-center justify-center w-full md:w-auto
+            min-h-[220px] xs:min-h-[300px] sm:min-h-[320px] max-w-full
+            landscape:md:min-h-[180px] landscape:md:w-4/5
+          "
+        >
+          <div
+            className="
+              relative w-full xs:w-[350px] sm:w-[420px] md:w-full
+              h-full min-h-[200px] xs:min-h-[260px] sm:min-h-[320px]
+              bg-yellow-100/60 rounded-3xl shadow-2xl shadow-yellow-200/50
+              border border-yellow-200 p-1.5 xs:p-2 md:p-3 flex items-center justify-center
+              before:content-[''] before:absolute before:inset-0 before:rounded-3xl before:bg-linear-to-b before:from-yellow-50/90 before:to-transparent before:backdrop-blur-sm
+              landscape:md:min-h-[180px]
+            "
+          >
+            <Image
+              src="/images/stupina1.jpg"
+              alt="Stupina cu miere naturală"
+              width={600}
+              height={400}
+              className="object-cover w-full h-full rounded-2xl relative z-10 transition-transform duration-300 hover:scale-105"
+              priority
+              sizes="(max-width: 640px) 90vw, (max-width: 1024px) 55vw, 40vw"
+              style={{
+                maxWidth: "100%",
+                maxHeight: "400px",
+                aspectRatio: "3/2",
+                objectFit: "cover",
+              }}
+            />
+            {/* floating badge */}
+            <div className="absolute top-3 xs:top-5 left-3 xs:left-5 bg-white/90 backdrop-blur-md shadow px-3 xs:px-4 py-1 rounded-full flex items-center gap-2 text-yellow-600 text-xs xs:text-sm font-medium">
+              <svg fill="#eab308" height={16} width={16} viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="12" />
+              </svg>
+              100% natural
+            </div>
+            <div className="absolute bottom-3 xs:bottom-5 right-3 xs:right-5 bg-yellow-500/80 text-white px-2.5 xs:px-3 py-1 rounded-full text-xs font-bold shadow-md tracking-wide">
+              Recoltă Nouă
+            </div>
+          </div>
+        </div>
         {/* Hero content */}
-        <div className="relative z-10 flex flex-col gap-7 w-full max-w-2xl">
+        <div
+          className="
+            relative z-10 flex flex-col gap-7 w-full max-w-2xl
+            items-start md:items-start
+            landscape:md:items-center landscape:md:text-center
+          "
+        >
           <span className="inline-flex items-center gap-2 px-3 py-1 bg-yellow-100 rounded-full w-max text-yellow-700 font-medium text-xs shadow-sm border border-yellow-200 tracking-widest uppercase mb-3">
             <svg
               width={18}
@@ -47,7 +109,7 @@ export default function Home() {
             </svg>
             Miere locală, naturală
           </span>
-          <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-yellow-700 leading-tight drop-shadow-xl">
+          <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-yellow-700 leading-tight drop-shadow-xl landscape:md:text-4xl">
             Miere naturală
             <br />
             <span className="relative whitespace-nowrap inline-block">
@@ -55,12 +117,12 @@ export default function Home() {
               <span className="relative z-10">direct de la apicultor</span>
             </span>
           </h1>
-          <p className="text-base xs:text-lg sm:text-xl text-gray-600/90 max-w-xl leading-relaxed font-medium">
+          <p className="text-base xs:text-lg sm:text-xl text-gray-600/90 max-w-xl leading-relaxed font-medium landscape:md:max-w-2xl">
             Produse apicole 100% naturale, recoltate cu grijă din stupina
             noastră locală. Gust proaspăt și autentic de la natura din Bihor
             direct la tine acasă.
           </p>
-          <div className="flex flex-wrap gap-3 xs:gap-4 mt-2">
+          <div className="flex flex-wrap gap-3 xs:gap-4 mt-2 justify-start landscape:md:justify-center">
             <Link
               href="/produse"
               className="inline-flex items-center gap-2 bg-yellow-500 hover:bg-yellow-600 text-white px-6 xs:px-7 py-2.5 xs:py-3 rounded-full font-semibold shadow-lg shadow-yellow-300/30 hover:shadow-yellow-400/50 duration-200 transition focus:outline-none ring-2 ring-yellow-300 text-sm xs:text-base"
@@ -89,31 +151,6 @@ export default function Home() {
               </svg>
               Contact
             </Link>
-          </div>
-        </div>
-        {/* Hero image with modern card styling */}
-        <div className="relative z-10 flex items-center justify-center w-full md:w-auto min-h-[220px] xs:min-h-[300px] sm:min-h-[320px] max-w-full">
-          <div className="relative w-full xs:w-[350px] sm:w-[420px] md:w-full h-full min-h-[200px] xs:min-h-[260px] sm:min-h-[320px] bg-yellow-100/60 rounded-3xl shadow-2xl shadow-yellow-200/50 border border-yellow-200 p-1.5 xs:p-2 md:p-3 flex items-center justify-center before:content-[''] before:absolute before:inset-0 before:rounded-3xl before:bg-linear-to-b before:from-yellow-50/90 before:to-transparent before:backdrop-blur-sm">
-            <Image
-              src="/images/stupina1.jpg"
-              alt="Stupina cu miere naturală"
-              width={600}
-              height={400}
-              className="object-cover w-full h-full rounded-2xl relative z-10 transition-transform duration-300 hover:scale-105"
-              priority
-              sizes="(max-width: 640px) 90vw, (max-width: 1024px) 55vw, 40vw"
-              style={{ maxWidth: "100%", maxHeight: "400px" }}
-            />
-            {/* floating badge */}
-            <div className="absolute top-3 xs:top-5 left-3 xs:left-5 bg-white/90 backdrop-blur-md shadow px-3 xs:px-4 py-1 rounded-full flex items-center gap-2 text-yellow-600 text-xs xs:text-sm font-medium">
-              <svg fill="#eab308" height={16} width={16} viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="12" />
-              </svg>
-              100% natural
-            </div>
-            <div className="absolute bottom-3 xs:bottom-5 right-3 xs:right-5 bg-yellow-500/80 text-white px-2.5 xs:px-3 py-1 rounded-full text-xs font-bold shadow-md tracking-wide">
-              Recoltă Nouă
-            </div>
           </div>
         </div>
       </section>
